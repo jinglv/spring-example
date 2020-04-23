@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="oneInterface" class="com.spring.example.ioc.interfaces.impl.OneInterfaceImpl"></bean>
+
+    <bean id="userService" class="com.spring.example.ioc.interfaces.impl.UserServiceImpl">
+        <!--设置属性-->
+        <property name="name" value="芙蓉姐姐"/>
+    </bean>
+
+</beans>
