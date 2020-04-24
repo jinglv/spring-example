@@ -2,15 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7d379e87-6202-4313-8fec-ccb6cb31659b" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/spring/example/base/UnitTestBase.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/spring/example/bean/Bean1Test.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/spring/example/bean/collection/CollectionBeanTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/spring/example/bean/injection/PersonTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/spring/example/bean/injection/UserTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/spring/example/ioc/injection/service/InjectionServiceImplTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/spring/example/ioc/interfaces/OneInterfaceImplTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/spring/example/ioc/interfaces/UserServiceImplTest.class" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/spring/example/bean/scope/Person.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/spring-scope.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/spring/example/bean/scope/PersonTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/spring/example/bean/Bean.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/spring/example/bean/Bean.md" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -28,23 +24,65 @@
       <file leaf-file-name="Bean.md" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/spring/example/bean/Bean.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="FIRST">
-              <first_editor relative-caret-position="760">
-                <caret line="40" column="19" selection-start-line="40" selection-start-column="19" selection-end-line="40" selection-end-column="19" />
+            <state split_layout="SECOND">
+              <first_editor relative-caret-position="355">
+                <caret line="38" column="67" selection-start-line="38" selection-start-column="67" selection-end-line="38" selection-end-column="67" />
               </first_editor>
               <second_editor />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CollectionBean.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/spring/example/bean/collection/CollectionBean.java">
+      <file leaf-file-name="IOC.md" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/spring/example/ioc/IOC.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SECOND">
+              <first_editor />
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Person.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/spring/example/bean/scope/Person.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="171">
-              <caret line="14" column="18" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="27" />
+            <state relative-caret-position="152">
+              <caret line="8" column="15" lean-forward="true" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="19" />
               <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="e#155#156#0" expanded="true" />
+                <element signature="e#203#204#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PersonTest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/spring/example/bean/scope/PersonTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="169">
+              <caret line="18" column="17" lean-forward="true" selection-start-line="18" selection-start-column="16" selection-end-line="18" selection-end-column="19" />
+              <folding>
+                <element signature="e#274#275#0" expanded="true" />
+                <element signature="e#292#293#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="spring-scope.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/spring-scope.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="133">
+              <caret line="7" column="83" selection-start-line="7" selection-start-column="83" selection-end-line="7" selection-end-column="83" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Category.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/spring/example/bean/injection/Category.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="11" selection-end-line="1" />
             </state>
           </provider>
         </entry>
@@ -72,11 +110,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="true">
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="174">
-              <caret line="29" column="38" selection-start-line="29" selection-start-column="38" selection-end-line="29" selection-end-column="38" />
+            <state relative-caret-position="418">
+              <caret line="22" column="35" selection-start-line="22" selection-start-column="35" selection-end-line="22" selection-end-column="35" />
             </state>
           </provider>
         </entry>
@@ -105,11 +143,14 @@
         <option value="$PROJECT_DIR$/src/main/java/com/spring/example/bean/injection/Category.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/spring/example/bean/injection/PersonTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/spring/example/bean/injection/ProductInfo.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/spring/example/bean/Bean.md" />
         <option value="$PROJECT_DIR$/src/main/java/com/spring/example/bean/collection/CollectionBean.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/spring/example/bean/collection/CollectionBeanTest.java" />
         <option value="$PROJECT_DIR$/src/main/resources/spring-bean-injection.xml" />
         <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/spring/example/bean/scope/Person.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/spring/example/bean/scope/PersonTest.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/spring-scope.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/spring/example/bean/Bean.md" />
       </list>
     </option>
   </component>
@@ -168,118 +209,6 @@
               <item name="spring-example" type="b2602c69:ProjectViewProjectNode" />
               <item name="spring-example" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="spring-example" type="b2602c69:ProjectViewProjectNode" />
-              <item name="spring-example" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="spring-example" type="b2602c69:ProjectViewProjectNode" />
-              <item name="spring-example" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="spring-example" type="b2602c69:ProjectViewProjectNode" />
-              <item name="spring-example" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="spring-example" type="b2602c69:ProjectViewProjectNode" />
-              <item name="spring-example" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="example" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="spring-example" type="b2602c69:ProjectViewProjectNode" />
-              <item name="spring-example" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="example" type="462c0819:PsiDirectoryNode" />
-              <item name="bean" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="spring-example" type="b2602c69:ProjectViewProjectNode" />
-              <item name="spring-example" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="example" type="462c0819:PsiDirectoryNode" />
-              <item name="bean" type="462c0819:PsiDirectoryNode" />
-              <item name="collection" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="spring-example" type="b2602c69:ProjectViewProjectNode" />
-              <item name="spring-example" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="example" type="462c0819:PsiDirectoryNode" />
-              <item name="ioc" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="spring-example" type="b2602c69:ProjectViewProjectNode" />
-              <item name="spring-example" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="spring-example" type="b2602c69:ProjectViewProjectNode" />
-              <item name="spring-example" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="spring-example" type="b2602c69:ProjectViewProjectNode" />
-              <item name="spring-example" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="spring-example" type="b2602c69:ProjectViewProjectNode" />
-              <item name="spring-example" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="example" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="spring-example" type="b2602c69:ProjectViewProjectNode" />
-              <item name="spring-example" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="example" type="462c0819:PsiDirectoryNode" />
-              <item name="bean" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="spring-example" type="b2602c69:ProjectViewProjectNode" />
-              <item name="spring-example" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="example" type="462c0819:PsiDirectoryNode" />
-              <item name="bean" type="462c0819:PsiDirectoryNode" />
-              <item name="injection" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="spring-example" type="b2602c69:ProjectViewProjectNode" />
-              <item name="spring-example" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="example" type="462c0819:PsiDirectoryNode" />
-              <item name="bean" type="462c0819:PsiDirectoryNode" />
-              <item name="injection" type="462c0819:PsiDirectoryNode" />
-              <item name="UserTest" type="1a9f42e2:ClassTreeNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -297,6 +226,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.spring.example.bean.scope" />
       <recent name="com.spring.example.bean.collection" />
       <recent name="com.spring.example.bean.injection" />
     </key>
@@ -319,7 +249,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.CollectionBeanTest.testCollection">
+  <component name="RunManager" selected="JUnit.PersonTest.say">
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
     </configuration>
@@ -336,6 +266,29 @@
       <option name="PACKAGE_NAME" value="com.spring.example.bean.collection" />
       <option name="MAIN_CLASS_NAME" value="com.spring.example.bean.collection.CollectionBeanTest" />
       <option name="METHOD_NAME" value="testCollection" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <patterns />
+    </configuration>
+    <configuration name="PersonTest.say" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="spring-example" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.spring.example.bean.scope.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="com.spring.example.bean.scope" />
+      <option name="MAIN_CLASS_NAME" value="com.spring.example.bean.scope.PersonTest" />
+      <option name="METHOD_NAME" value="say" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -405,29 +358,6 @@
       <option name="PACKAGE_NAME" value="com.spring.example.bean.injection" />
       <option name="MAIN_CLASS_NAME" value="com.spring.example.bean.injection.PersonTest" />
       <option name="METHOD_NAME" value="testProduct" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <patterns />
-    </configuration>
-    <configuration name="UserTest.testUser" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="spring-example" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.spring.example.bean.injection.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="com.spring.example.bean.injection" />
-      <option name="MAIN_CLASS_NAME" value="com.spring.example.bean.injection.UserTest" />
-      <option name="METHOD_NAME" value="testUser" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -535,19 +465,19 @@
       <option name="_new_targetType" value="&quot;PATH&quot;" />
     </configuration>
     <list>
-      <item itemvalue="JUnit.UserTest.testUser" />
       <item itemvalue="JUnit.PersonTest.testPerson" />
       <item itemvalue="JUnit.PersonTest.testPersonP" />
       <item itemvalue="JUnit.PersonTest.testProduct" />
       <item itemvalue="JUnit.CollectionBeanTest.testCollection" />
+      <item itemvalue="JUnit.PersonTest.say" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.PersonTest.say" />
         <item itemvalue="JUnit.CollectionBeanTest.testCollection" />
         <item itemvalue="JUnit.PersonTest.testProduct" />
         <item itemvalue="JUnit.PersonTest.testPersonP" />
         <item itemvalue="JUnit.PersonTest.testPerson" />
-        <item itemvalue="JUnit.UserTest.testUser" />
       </list>
     </recent_temporary>
   </component>
@@ -564,17 +494,19 @@
       <workItem from="1587486094863" duration="1011000" />
       <workItem from="1587551762574" duration="1107000" />
       <workItem from="1587648780125" duration="3411000" />
-      <workItem from="1587652795575" duration="672000" />
+      <workItem from="1587652795575" duration="4894000" />
     </task>
+    <task id="LOCAL-00001" summary="[update]spring版本">
+      <created>1587653504977</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1587653504977</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="UserTest_testUser - 2020.04.23 at 21h 43m 42s.xml">
-      <configuration name="UserTest.testUser" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="PersonTest_testPerson - 2020.04.23 at 21h 49m 47s.xml">
-      <configuration name="PersonTest.testPerson" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="UserTest_testUser - 2020.04.23 at 21h 52m 37s.xml">
       <configuration name="UserTest.testUser" configurationId="JUnit" />
     </history-entry>
@@ -599,39 +531,44 @@
     <history-entry file="CollectionBeanTest_testCollection - 2020.04.23 at 22h 26m 54s.xml">
       <configuration name="CollectionBeanTest.testCollection" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="PersonTest_say - 2020.04.24 at 12h 45m 44s.xml">
+      <configuration name="PersonTest.say" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="PersonTest_say - 2020.04.24 at 12h 46m 18s.xml">
+      <configuration name="PersonTest.say" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="6201000" />
+    <option name="totallyTimeSpent" value="10423000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="813" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="right" id="Palette&#9;" order="3" />
-      <window_info id="Image Layers" order="2" />
-      <window_info anchor="right" id="Capture Analysis" order="3" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="right" id="Maven Projects" order="3" weight="0.3297568" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32900432" />
-      <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info anchor="bottom" id="Spring" order="8" />
-      <window_info anchor="bottom" id="Terminal" order="7" visible="true" weight="0.32756132" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
-      <window_info anchor="bottom" id="Problems" order="7" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26037195" />
       <window_info anchor="right" id="Database" order="3" />
-      <window_info anchor="right" id="SciView" order="3" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="2" />
-      <window_info anchor="right" id="Theme Preview" order="3" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Messages" order="8" />
+      <window_info anchor="right" id="Palette&#9;" order="3" />
+      <window_info id="Image Layers" order="2" />
+      <window_info anchor="right" id="Capture Analysis" order="3" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32756132" />
+      <window_info anchor="bottom" id="Version Control" order="7" />
+      <window_info anchor="bottom" id="Spring" order="8" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.32756132" />
+      <window_info anchor="bottom" id="Problems" order="7" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22174536" />
+      <window_info anchor="right" id="SciView" order="3" />
+      <window_info anchor="right" id="Theme Preview" order="3" />
+      <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
@@ -645,6 +582,10 @@
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="[update]spring版本" />
+    <option name="LAST_COMMIT_MESSAGE" value="[update]spring版本" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/main/java/com/spring/example/bean/Bean.md">
@@ -702,14 +643,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SECOND">
-          <first_editor />
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/spring/example/ioc/interfaces/OneInterface.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="95">
@@ -745,16 +678,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/spring-bean.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/spring/example/bean/instantiation/Bean1.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/spring/example/bean/instantiation/Bean2.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="152">
@@ -762,21 +685,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/spring/example/bean/instantiation/Bean2Factory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/spring/example/bean/instantiation/Bean3.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/spring/example/bean/instantiation/Bean3Factory.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="152">
           <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
@@ -818,13 +727,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/spring/example/bean/injection/Category.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="8" column="4" selection-start-line="8" selection-start-column="4" selection-end-line="8" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/spring/example/bean/injection/ProductInfo.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="152">
@@ -840,26 +742,6 @@
             <element signature="imports" expanded="true" />
             <element signature="e#187#188#0" expanded="true" />
             <element signature="e#207#208#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/spring/example/bean/Bean.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="FIRST">
-          <first_editor relative-caret-position="760">
-            <caret line="40" column="19" selection-start-line="40" selection-start-column="19" selection-end-line="40" selection-end-column="19" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/spring/example/bean/collection/CollectionBean.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="14" column="18" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="27" />
-          <folding>
-            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -903,8 +785,107 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="174">
-          <caret line="29" column="38" selection-start-line="29" selection-start-column="38" selection-end-line="29" selection-end-column="38" />
+        <state relative-caret-position="418">
+          <caret line="22" column="35" selection-start-line="22" selection-start-column="35" selection-end-line="22" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SECOND">
+          <first_editor />
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/spring/example/bean/instantiation/Bean1.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="10" column="13" lean-forward="true" selection-start-line="10" selection-start-column="7" selection-end-line="10" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/spring/example/bean/instantiation/Bean2Factory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="57">
+          <caret line="3" column="13" lean-forward="true" selection-start-line="3" selection-start-column="3" selection-end-line="3" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/spring/example/bean/instantiation/Bean3Factory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="57">
+          <caret line="3" column="13" lean-forward="true" selection-start-line="3" selection-start-column="3" selection-end-line="3" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/spring-injection.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/spring-bean.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/spring/example/bean/collection/CollectionBean.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="19" selection-end-line="1" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/spring/example/bean/injection/Category.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="11" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/spring/example/bean/scope/Person.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="8" column="15" lean-forward="true" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="19" />
+          <folding>
+            <element signature="e#155#156#0" expanded="true" />
+            <element signature="e#203#204#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/spring/example/bean/scope/PersonTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="169">
+          <caret line="18" column="17" lean-forward="true" selection-start-line="18" selection-start-column="16" selection-end-line="18" selection-end-column="19" />
+          <folding>
+            <element signature="e#274#275#0" expanded="true" />
+            <element signature="e#292#293#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/spring-scope.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="7" column="83" selection-start-line="7" selection-start-column="83" selection-end-line="7" selection-end-column="83" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/spring/example/bean/Bean.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SECOND">
+          <first_editor relative-caret-position="355">
+            <caret line="38" column="67" selection-start-line="38" selection-start-column="67" selection-end-line="38" selection-end-column="67" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/spring/example/ioc/IOC.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SECOND">
+          <first_editor />
+          <second_editor />
         </state>
       </provider>
     </entry>
