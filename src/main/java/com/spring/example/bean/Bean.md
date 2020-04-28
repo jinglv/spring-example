@@ -47,6 +47,29 @@ XML配置文件：spring-bean.xml
 |session|同一个HTTP Session共享一个Bean，不同的HTTP Session使用不同的Bean。该作用域仅适用于WebApplicationContext环境|
 
 ## Bean的生命周期
+Spring初始化bean或销毁bean时，有时需要做一些处理工作，因此spring可以在创建和销毁bean的时候调用bean的两个生命周期的方法
+```
+<bean id="xxx" calss="xxxx.xxxx.xxx" init-method="init" destory-method="destory"/>
+```
+- 当bean被载入到容器的时候调用init
+- 当bean从容器中删除的时候调用destory(scope=singleton有效，多例时不知道需要销毁哪个则无效)
+
+### 生命周期的完整过程
+![image](http://m.qpic.cn/psc?/V12A7VgS03zLND/QNsgOSLzUrTyB8UN2gSlSGIxcEIfSOyMQ9qPzUOROl2dlVdjSzI*OcngfWax0ODrhLGh2RE8ESBgfqn4rjxBww!!/b&bo=TAO1AgAAAAADB9o!&rf=viewer_4)
+1. instantiate bean对象实例化
+2. populate properties 封装属性
+3. 如果Bean实现BeanNameAware执行`setBeanName`
+4. 如果Bean实现BeanFactoryAware或者ApplicationContextAware设置工厂`setBeanFactory`或者上下文对象`setApplicationContext`
+5. 如果存在类实现BeanPostProcessor(后处理Bean)，执行`postProcessBeforeInitialization`
+6. 如果Bean实现InitializingBean执行`afterPropertiesSet`
+7. 调用<bean init-method="init">指定初始化方法`init`
+8. `如果存在类实现BeanPostProcessor(处理Bean)，执行postProcessAfterInitialization`
+9. 执行业务处理
+10. 如果Bean实现DisposableBean执行`destroy`
+11. 调用<bean destroy-method="customerDestory">指定销毁方法`customerDestory`
+
+### beanpostprocessor的作用
+beanpostprocessor 类可以在生成类的过程当中，对类产生代理，并可以对类中的方法进行增强。
 
 ## Spring的属性注入
 - 对于类成员变量，注入方式有三种
@@ -86,3 +109,42 @@ SpEL表达式语言
 示例：package com.spring.example.bean.injection; AND package com.spring.example.bean.collection;
 
 ## 注解
+### 使用注解定义Bean
+- Spring2.5引入使用注解去定义Bean
+    - @Component 描述Spring框架中Bean
+- 除了@Component外，Spring提供了3个功能基本和@Component等效的注解
+    - @Repository 用于对DAO实现类进行标注
+    - @Service 用于Service实现类进行标注
+    - @Controller 用于对Controller实现类进行标注
+    - 这三个注解是为了让标注类本身的用途清晰，Spring在后续版本会对其增强
+
+### Spring的属性注入-注解方式
+- 使用@Autowired进行自动注入
+- @Autowired默认按照类型进行注入
+    - 如果存在两个相同Bean类型，则按照名称注入
+- @Autowired注入时可以针对成员变量或者set方法
+- 通过@Autowired的required属性，设置一定要找到匹配的Bean
+- 使用@Qualifier指定注入Bean的名称
+- Spring提供对JSR-250中定义@Resource标准注解的支持
+- @Resource和@Autowired注解功能相似
+
+### Spring的其他注解
+#### Bean的生命周期
+Spring初始化bean或销毁bean时，有时需要做一些处理工作，因此spring可以在创建和销毁bean的时候调用bean的两个生命周期的方法
+```
+<bean id="xxx" calss="xxxx.xxxx.xxx" init-method="init" destory-method="destory"/>
+```
+- 当bean被载入到容器的时候调用init，注解方式：**@PostConstruct** 初始化
+- 当bean从容器中删除的时候调用destory(scope=singleton有效，多例时不知道需要销毁哪个则无效)，注解方式：**@PreDestroy** 销毁
+#### Bean的作用范围
+- 使用注解配置的Bean和<bean>配置的一样，默认作用范围都是singleton
+- **@Scope**注解用于指定Bean的作用范围
+
+### 传统XML配置和注解配置混合使用
+- XML方式的优势
+    - 结构清晰，易于阅读
+- 注解方式的优势
+    - 开发便捷，属性注入方便
+- XML与注解的整合开发
+    - 1、引入context命名空间
+    - 2、在配置文件中添加context:annotation-config标签

@@ -35,9 +35,12 @@ public class UnitTestBase {
         }
     }
 
+    /**
+     * Bean的关闭销毁
+     */
     @After
     public void after() {
-        context.destroy();
+        context.close();
     }
 
 
