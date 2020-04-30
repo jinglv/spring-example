@@ -1,34 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7d379e87-6202-4313-8fec-ccb6cb31659b" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/spring-example.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/spring/example/bean/all/CategoryDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/spring/example/bean/all/ProductDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/spring/example/bean/all/ProductService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/spring/example/bean/annotation/Bean.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/spring/example/bean/annotation/ScopeBean.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/spring/example/bean/annotation/UserDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/spring/example/bean/annotation/UserService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/spring/example/bean/lifecycle/Man.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/spring/example/bean/lifecycle/MyBeanPostProcessor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/spring/example/bean/lifecycle/UserDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/spring/example/bean/lifecycle/UserDaoImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/spring-annotation.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/spring-lifecycle.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/spring/example/bean/all/ProductServiceTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/spring/example/bean/annotation/BeanTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/spring/example/bean/annotation/ScopeBeanTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/spring/example/bean/annotation/UserServiceTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/spring/example/bean/lifecycle/ManTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="7d379e87-6202-4313-8fec-ccb6cb31659b" name="Default" comment="[add]Bean学习笔记">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/spring/example/aop/AOP.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/spring/example/aop/proxy/cglib/MyCglibProxy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/spring/example/aop/proxy/cglib/ProductDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/spring/example/aop/proxy/jdk/MyJdkProxy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/spring/example/aop/proxy/jdk/UserDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/spring/example/aop/proxy/jdk/UserDaoImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/spring/example/aop/proxy/cglib/ProductDaoTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/spring/example/aop/proxy/jdk/UserDaoImplTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/spring/example/bean/Bean.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/spring/example/bean/Bean.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/spring-scope.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/spring-scope.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/spring/example/base/UnitTestBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/spring/example/base/UnitTestBase.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/spring/example/base/UnitTestBase.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/spring/example/base/UnitTestBase.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,8 +25,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
-        <option value="Class" />
         <option value="JUnit4 Test Class" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -85,81 +68,23 @@
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.spring.example.aop.proxy.cglib" />
+      <recent name="com.spring.example.aop.proxy.jdk" />
       <recent name="com.spring.example.bean.all" />
       <recent name="com.spring.example.bean.annotation" />
       <recent name="com.spring.example.bean.lifecycle" />
-      <recent name="com.spring.example.bean.scope" />
-      <recent name="com.spring.example.bean.collection" />
-    </key>
-    <key name="CreateTestDialog.Recents.Supers">
-      <recent name="" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.spring.example.bean.lifecycle" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/main/resources" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.ProductServiceTest.save">
-    <configuration default="true" type="tests" factoryName="Nosetests">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="_new_regexPattern" value="&quot;&quot;" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;&quot;" />
-      <option name="_new_targetType" value="&quot;PATH&quot;" />
-    </configuration>
-    <configuration default="true" type="tests" factoryName="Twisted Trial">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;&quot;" />
-      <option name="_new_targetType" value="&quot;PATH&quot;" />
-    </configuration>
-    <configuration default="true" type="tests" factoryName="Unittests">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;&quot;" />
-      <option name="_new_targetType" value="&quot;PATH&quot;" />
-    </configuration>
-    <configuration default="true" type="tests" factoryName="py.test">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="_new_keywords" value="&quot;&quot;" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;&quot;" />
-      <option name="_new_targetType" value="&quot;PATH&quot;" />
-    </configuration>
+  <component name="RunManager" selected="JUnit.ProductDaoTest">
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <method v="2">
@@ -178,6 +103,22 @@
       <option name="MAIN_CLASS_NAME" value="com.spring.example.bean.annotation.BeanTest" />
       <option name="METHOD_NAME" value="testSay" />
       <option name="TEST_OBJECT" value="method" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ProductDaoTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="spring-example" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.spring.example.aop.proxy.cglib.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.spring.example.aop.proxy.cglib" />
+      <option name="MAIN_CLASS_NAME" value="com.spring.example.aop.proxy.cglib.ProductDaoTest" />
+      <option name="TEST_OBJECT" value="class" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -217,34 +158,17 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UserServiceTest.testUserEatService" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="UserDaoImplTest.demo1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="spring-example" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.spring.example.bean.annotation.*" />
+          <option name="PATTERN" value="com.spring.example.aop.proxy.jdk.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.spring.example.bean.annotation" />
-      <option name="MAIN_CLASS_NAME" value="com.spring.example.bean.annotation.UserServiceTest" />
-      <option name="METHOD_NAME" value="testUserEatService" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="UserServiceTest.testUserSaveService" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="spring-example" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.spring.example.bean.annotation.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.spring.example.bean.annotation" />
-      <option name="MAIN_CLASS_NAME" value="com.spring.example.bean.annotation.UserServiceTest" />
-      <option name="METHOD_NAME" value="testUserSaveService" />
+      <option name="PACKAGE_NAME" value="com.spring.example.aop.proxy.jdk" />
+      <option name="MAIN_CLASS_NAME" value="com.spring.example.aop.proxy.jdk.UserDaoImplTest" />
+      <option name="METHOD_NAME" value="demo1" />
       <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
       <method v="2">
@@ -267,20 +191,83 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration default="true" type="tests" factoryName="Nosetests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="_new_regexPattern" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Twisted Trial">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Unittests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="py.test">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="_new_keywords" value="&quot;&quot;" />
+      <option name="_new_parameters" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method v="2" />
+    </configuration>
     <list>
-      <item itemvalue="JUnit.UserServiceTest.testUserEatService" />
-      <item itemvalue="JUnit.UserServiceTest.testUserSaveService" />
       <item itemvalue="JUnit.BeanTest.testSay" />
       <item itemvalue="JUnit.ScopeBeanTest.test" />
       <item itemvalue="JUnit.ProductServiceTest.save" />
+      <item itemvalue="JUnit.UserDaoImplTest.demo1" />
+      <item itemvalue="JUnit.ProductDaoTest" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.ProductDaoTest" />
+        <item itemvalue="JUnit.UserDaoImplTest.demo1" />
         <item itemvalue="JUnit.ProductServiceTest.save" />
         <item itemvalue="JUnit.ScopeBeanTest.test" />
         <item itemvalue="JUnit.BeanTest.testSay" />
-        <item itemvalue="JUnit.UserServiceTest.testUserSaveService" />
-        <item itemvalue="JUnit.UserServiceTest.testUserEatService" />
       </list>
     </recent_temporary>
   </component>
@@ -303,7 +290,9 @@
       <workItem from="1587955201411" duration="4401000" />
       <workItem from="1588072859288" duration="12000" />
       <workItem from="1588073419629" duration="1325000" />
-      <workItem from="1588075585356" duration="498000" />
+      <workItem from="1588075585356" duration="678000" />
+      <workItem from="1588131821160" duration="6582000" />
+      <workItem from="1588222920878" duration="2221000" />
     </task>
     <task id="LOCAL-00001" summary="[update]spring版本">
       <created>1587653504977</created>
@@ -319,40 +308,15 @@
       <option name="project" value="LOCAL" />
       <updated>1587725785192</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="[add]Bean学习笔记">
+      <created>1588076125899</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1588076125900</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
-  </component>
-  <component name="TestHistory">
-    <history-entry file="UserServiceTest_testUserEatService - 2020.04.27 at 11h 47m 33s.xml">
-      <configuration name="UserServiceTest.testUserEatService" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="UserServiceTest_testUserSaveService - 2020.04.27 at 11h 53m 47s.xml">
-      <configuration name="UserServiceTest.testUserSaveService" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="UserServiceTest_testUserSaveService - 2020.04.27 at 11h 58m 58s.xml">
-      <configuration name="UserServiceTest.testUserSaveService" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="UserServiceTest_testUserSaveService - 2020.04.27 at 11h 59m 12s.xml">
-      <configuration name="UserServiceTest.testUserSaveService" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="UserServiceTest_testUserSaveService - 2020.04.27 at 12h 01m 26s.xml">
-      <configuration name="UserServiceTest.testUserSaveService" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="UserServiceTest_testUserSaveService - 2020.04.27 at 12h 05m 11s.xml">
-      <configuration name="UserServiceTest.testUserSaveService" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="BeanTest_testSay - 2020.04.27 at 12h 22m 22s.xml">
-      <configuration name="BeanTest.testSay" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ScopeBeanTest_test - 2020.04.27 at 12h 27m 49s.xml">
-      <configuration name="ScopeBeanTest.test" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ScopeBeanTest_test - 2020.04.27 at 12h 28m 28s.xml">
-      <configuration name="ScopeBeanTest.test" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ProductServiceTest_save - 2020.04.28 at 19h 34m 08s.xml">
-      <configuration name="ProductServiceTest.save" configurationId="JUnit" />
-    </history-entry>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="2" />
@@ -360,7 +324,60 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="[update]spring版本" />
     <MESSAGE value="[add]Bean学习" />
-    <option name="LAST_COMMIT_MESSAGE" value="[add]Bean学习" />
+    <MESSAGE value="[add]Bean学习笔记" />
+    <option name="LAST_COMMIT_MESSAGE" value="[add]Bean学习笔记" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="533" y="143" key="#com.intellij.ide.util.MemberChooser" timestamp="1588222372597">
+      <screen x="0" y="23" width="1440" height="813" />
+    </state>
+    <state x="533" y="143" key="#com.intellij.ide.util.MemberChooser/0.23.1440.813/1440.-102.1920.1057@0.23.1440.813" timestamp="1588139890708" />
+    <state x="533" y="143" key="#com.intellij.ide.util.MemberChooser/0.23.1440.813@0.23.1440.813" timestamp="1588222372597" />
+    <state x="307" y="361" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1588139394096">
+      <screen x="0" y="23" width="1440" height="813" />
+    </state>
+    <state x="307" y="361" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/0.23.1440.813/1440.-102.1920.1057@0.23.1440.813" timestamp="1588139394096" />
+    <state x="213" y="23" key="CommitChangelistDialog2" timestamp="1588076125642">
+      <screen x="0" y="23" width="1440" height="813" />
+    </state>
+    <state x="213" y="23" key="CommitChangelistDialog2/0.23.1440.813/1440.-102.1920.1057@0.23.1440.813" timestamp="1588076125642" />
+    <state width="1398" height="237" key="GridCell.Tab.0.bottom" timestamp="1588222889670">
+      <screen x="0" y="23" width="1440" height="813" />
+    </state>
+    <state width="1398" height="200" key="GridCell.Tab.0.bottom/0.23.1440.813/1440.-102.1920.1057@0.23.1440.813" timestamp="1588140070691" />
+    <state width="1398" height="237" key="GridCell.Tab.0.bottom/0.23.1440.813@0.23.1440.813" timestamp="1588222889670" />
+    <state width="1398" height="237" key="GridCell.Tab.0.center" timestamp="1588222889669">
+      <screen x="0" y="23" width="1440" height="813" />
+    </state>
+    <state width="1398" height="200" key="GridCell.Tab.0.center/0.23.1440.813/1440.-102.1920.1057@0.23.1440.813" timestamp="1588140070690" />
+    <state width="1398" height="237" key="GridCell.Tab.0.center/0.23.1440.813@0.23.1440.813" timestamp="1588222889669" />
+    <state width="1398" height="237" key="GridCell.Tab.0.left" timestamp="1588222889669">
+      <screen x="0" y="23" width="1440" height="813" />
+    </state>
+    <state width="1398" height="200" key="GridCell.Tab.0.left/0.23.1440.813/1440.-102.1920.1057@0.23.1440.813" timestamp="1588140070690" />
+    <state width="1398" height="237" key="GridCell.Tab.0.left/0.23.1440.813@0.23.1440.813" timestamp="1588222889669" />
+    <state width="1398" height="237" key="GridCell.Tab.0.right" timestamp="1588222889669">
+      <screen x="0" y="23" width="1440" height="813" />
+    </state>
+    <state width="1398" height="200" key="GridCell.Tab.0.right/0.23.1440.813/1440.-102.1920.1057@0.23.1440.813" timestamp="1588140070690" />
+    <state width="1398" height="237" key="GridCell.Tab.0.right/0.23.1440.813@0.23.1440.813" timestamp="1588222889669" />
+    <state x="349" y="136" key="NewModule_or_Project.wizard" timestamp="1588142542002">
+      <screen x="0" y="23" width="1440" height="813" />
+    </state>
+    <state x="349" y="136" key="NewModule_or_Project.wizard/0.23.1440.813/1440.-102.1920.1057@0.23.1440.813" timestamp="1588142542002" />
+    <state x="229" y="68" key="SettingsEditor" timestamp="1588076029565">
+      <screen x="0" y="23" width="1440" height="813" />
+    </state>
+    <state x="229" y="68" key="SettingsEditor/0.23.1440.813/1440.-102.1920.1057@0.23.1440.813" timestamp="1588076029565" />
+    <state x="320" y="169" key="Vcs.Push.Dialog.v2" timestamp="1588076128030">
+      <screen x="0" y="23" width="1440" height="813" />
+    </state>
+    <state x="320" y="169" key="Vcs.Push.Dialog.v2/0.23.1440.813/1440.-102.1920.1057@0.23.1440.813" timestamp="1588076128030" />
+    <state x="464" y="222" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1588222084949">
+      <screen x="0" y="23" width="1440" height="813" />
+    </state>
+    <state x="464" y="222" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.23.1440.813/1440.-102.1920.1057@0.23.1440.813" timestamp="1588139587114" />
+    <state x="464" y="222" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.23.1440.813@0.23.1440.813" timestamp="1588222084949" />
   </component>
   <component name="masterDetails">
     <states>
