@@ -39,7 +39,8 @@ cglib动态代理实现，见实例：package com.spring.example.aop.proxy.cglib
     - CGLib是针对目标类生产子类，因此类或方法不能使用final
 - Spring只支持方法连接点，不提供属性连接点
 
-# Spring AOP增强类型
+# Spring的传统AOP
+## Spring AOP增强（通知）类型
 - AOP联盟为通知Advice定义了org.aopalliance.aop.Interface.Advice
 - Spring安装通知Advice在目标类方法的连接点位置，可以分为5类
     - 前置通知：org.spring.framework.aop.MethodBeforeAdvice
@@ -53,9 +54,59 @@ cglib动态代理实现，见实例：package com.spring.example.aop.proxy.cglib
     - 引介通知：org.springframework.aop.IntroductionInterceptor
         - 在目标类中添加一些新的方法和属性
 
-# Spring的传统AOP
-## 不带切入点的切面
-## 带有切入点的切面
-# Spring的传统AOP的自动代理
+## Spring AOP切面类型
+- Advisor：代表一般切面，Advice本身就是一个切面，对目标类所有方法进行拦截
+- PointcutAdvisor：代表具有切面点的切面，可以指定拦截目标类哪些方法
+- IntroductionAdvisor：代表引介切面，针对引介通知而使用切面
+
+## Advisor切面案例
+需要引入的依赖
+```
+<dependency>
+    <groupId>aopalliance</groupId>
+    <artifactId>aopalliance</artifactId>
+    <version>1.0</version>
+</dependency>
+
+<dependency>
+    <groupId>org.springframework</groupId>
+    <artifactId>spring-aop</artifactId>
+    <version>${spring.version}</version>
+</dependency>
+```
+### 不带切入点的切面（一般切面）
+- ProxyFactoryBean常用可配置属性
+    - target：代理的目标对象
+    - proxyInterfaces：代理要实现的接口
+        - 如果多个接口可以使用以下格式赋值
+        ```
+        <list>
+            <value></value>
+            ...
+        </list>
+        ```
+- proxyTargetClass：是否对类代理而不是接口，设置为true时，使用CGLib代理
+- interceptorNames：需要织入目标的Advice
+- singleton：返回代理是否为单例，默认为单例
+- optimize：当设置为true时，强制使用CGLib
+
+### 带有切入点的切面
+- 使用普通Advice作为切面，将对目标类所有方法进行拦截，不够灵活，在实际开发中常采用带有切点的切面
+- 常用PointcutAdvisor 切点切面 实现类
+    - DefaultPointcutAdvisor 最常用的切面类型，它可以通过任意Pointcut和Advice组合定义切面
+    - JdkRegexpMethodPointcut 构造正则表达式切点
+
+# Spring的传统AOP的自动创建代理
+- 前面的案例中，每个代理都是通过ProxyFactoryBean织入切面代理，在实际开发中，非常多的Bean每个都配置ProxyFactoryBean开发维护量巨大
+- 解决方法：自动创建代理
+    - BeanNameAutoProxyCreator 根据Bean名称创建代理
+    - DefaultAdvisorAutoProxyCreator 根据Advisor本身包含信息创建代理
+    - AnnotationAwareAspectJAutoProxyCreator 基于Bean中的AspectJ注解进行自动代理
+
 ## 基于Bean名称的自动代理
+BeanNameAutoProxyCreator
+- 对所有DAO结尾Bean所有方法使用代理
+
 ## 基于切面信息的自动代理
+DefaultAdvisorAutoProxyCreator
+
