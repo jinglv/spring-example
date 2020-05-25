@@ -16,7 +16,7 @@
 - 易于上手、快速解决问题
 
 # Spring的架构
-![image](http://m.qpic.cn/psc?/V14CguwT3of3iO/OUPmlelHOmnEaLm65Jno20aWK5MbzE*tDNM1l8*E8c9p*yznDGZMJDrz2uRMk8SsD8kTVq6OCNGIBO54116we8equPV0.L9MhzQJjvf3oiE!/b&bo=9AUQAwAAAAADF9A!&rf=viewer_4)
+![image](image/spring架构.png)
 # Spring的介绍
 - Spring相关网站
     - [Spring官网](https://spring.io)
@@ -51,7 +51,7 @@
 - 对主流应用框架（Hibernate等）提供了良好的支持
 
 ## Spring的模块
-![image](http://m.qpic.cn/psc?/V14CguwT3of3iO/OUPmlelHOmnEaLm65Jno26aevx2uuJnDoVegCy05MebKxE1hjmkZ.I4NxytsdFR1Gd4n1OsOfhFnD.AW0lFAoCth4sTR5TP1rPk.jzSlPYQ!/b&bo=zwU4BAAAAAADF8Q!&rf=viewer_4)
+![image](image/spring模块.png)
 1. 核心容器（Core Container）
     - spring-core：提供Spring框架的核心支持，包括各种工具与基本注解，大多数其他模块都需要引入核心模块
     - spring-beans：提供Spring框架对Bean生命周期相关的支持，包括BeanFactory等组件

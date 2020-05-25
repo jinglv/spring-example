@@ -1,4 +1,51 @@
 # IOC
+## Bean管理
+### 传统思想
+- Bean之间的依赖关系如何体现
+![bean](image/bean传统思想.png)
+    - 程序员对A（对象）进行了主动的使用（new）创建了A类，A类中又依赖了B类，然后在对B类进行创建
+    - 创建对象的权利限制是在程序员手上，需要哪个类就会对哪个类进行创建
+    - B类是由程序员调用了A类有对B类的依赖随着而创建
+    - 总之就是自动动手丰衣足食，没有借助任何中间产物
+- 优点
+    - 简单，需要什么就创建什么，从程序员角度上也是比较直观容易理解
+- 缺点
+    - Bean之间的协调关系是由程序内部代码来控制，即通过New关键字与我们的业务代码进行了强耦合
+    - 对Bean没有进行统一的管理和配置 
+### IOC思想
+首先在这里强调一下IOC不是Spring提出来了，在Spring之前就已经有人提出了IOC思想，只不过在Spring之前都是偏理论化没有一个具体的落地方案，Spring在技术层面把IOC思想体现的淋漓尽致。
+#### 什么是 IOC(Inversion of controller)
+- IOC 是一种思想，而不是一个技术的实现
+- 主要的描述是在软件开发的领域对象的创建和管理的问题
+![ioc思想](image/ioc思想bean.png)
+
+从上图可知:
+
+- 程序员只需要告诉IOC自己需要那个Bean。就不需要关系该Bean创建的细节已经该Bean的相关依赖。这一切IOC容器已经帮你做好了。
+- 凡事有得必有失: 这个过程中我们失去了创建Bean的权利。
+
+## 控制反转
+在理解控制反转之前我们首先要清楚控制是指什么？ 反转又反转了什么？
+
+- **控制**: 指的就是我们上述说的我们失去的权利(创建对象的创建，或者说控制对象的权利)
+- **反转**: 指的是控制权的转变。在没有 IOC 的容器上我们程序员想创建谁就创建谁的权利。在 IOC 容器下程序员就只能委屈巴巴的向 IOC 容器索取对象。创建对象的权利由程序员到 IOC 容器手里了。
+
+## IOC 解决了什么问题？
+- 其实就是解决了对象之间的耦合问题。
+- 我们不需要在通过New关键字来创建对象，而是从容器中获取达到一种松耦合的目的。
+- 同时IOC容器也方便管理容器内的所有Bean对象。所谓的Bean的生命周期。
+
+## IOC和DI的区别
+将到 IOC 肯定会有人想到 DI(Dependancy Injection)依赖注入，那这两者有什么不同和相同呢？
+
+### 相同点
+IOC 和 DI 描述的都是同一件事情(对象的实例化以及维护对象与对象已经的依赖关系)
+
+### 不同点
+- 首先IOC是一种思想，而DI是一种具体的技术实现手段。
+- IOC是站着对象的角度上对象的实例化以及管理从程序员的手里交给了IOC容器
+- DI是站着容器的角度的上会把对象的依赖的其他对象注入到容器中，上述案例中的A类依赖B类IOC容器不仅仅将A类放到容器中还需要将其依赖的B类也一并加载到IOC容器中。
+
 ## 接口及面向接口编程
 ### 接口
 - 用于沟通的中介物的抽象化
@@ -12,7 +59,7 @@
 - "面向接口编程"中的"接口"是用于隐藏具体实现和实现多态性的组件
 
 ## 简单的面向接口的例子
-![image](http://m.qpic.cn/psc?/V12A7VgS03zLND/QNsgOSLzUrTyB8UN2gSlSBG7G4kO*dxicjsLpW0YWlC6LNruD3A6XzwgHeY7IYNlXDCt5DxAlWcmQG0IFk8YeA!!/b&bo=vgY4BAAAAAADB6Y!&rf=viewer_4)
+![image](image/面向接口.png)
 传统方式与IOC比较
 
 Package:ioc.interfaces
@@ -36,14 +83,13 @@ Package:ioc.interfaces
 - DI Dependency Injection依赖注入的概念，就是在Spring创建这个对象的过程中，将这个对象所依赖的属性注入进去
 
 The Spring IoC container
-![image](http://m.qpic.cn/psc?/V12A7VgS03zLND/6RAq0V9V8Td2AB7JS6C71IZF8xE6uHUdDcRjDJ1qajThuAgKOtutyNidkQBaXccDxwSRB9uEOGDJUyonkbex9rEF2sZIDKpUXKv.hVpTn8w!/b&bo=pAMgAwAAAAADB6Y!&rf=viewer_4)
+![image](image/spring ioc.png)
 
 IOC房屋中介
-![image](http://m.qpic.cn/psc?/V12A7VgS03zLND/6RAq0V9V8Td2AB7JS6C71MImTQZc5ZDU9MurwmmjFXPCpQSsR3mfkh94pM5.TRf2ABoqcidHpEeD5IbfPIfgw2h8O*MVCmGLDd59xMxWPbA!/b&bo=KgauAgAAAAADB6I!&rf=viewer_4)
+![image](image/ioc实例.png)
 
 ## Spring工厂类
-![image](http://m.qpic.cn/psc?/V12A7VgS03zLND/QNsgOSLzUrTyB8UN2gSlSHvqfv7zFNPOfUUfNSER8Qq1ZBFsLKDapmVhkqUdpdzAe2tVccYvO4L0neVyPrN0rQ!!/b&bo=LAU4BAAAAAADBzc!&rf=viewer_4)
-
+![image](image/Spring工厂类.png)
 
 ## Spring IOC需要的依赖
 pom.xml

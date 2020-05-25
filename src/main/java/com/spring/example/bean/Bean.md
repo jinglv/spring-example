@@ -55,7 +55,7 @@ Spring初始化bean或销毁bean时，有时需要做一些处理工作，因此
 - 当bean从容器中删除的时候调用destory(scope=singleton有效，多例时不知道需要销毁哪个则无效)
 
 ### 生命周期的完整过程
-![image](http://m.qpic.cn/psc?/V12A7VgS03zLND/QNsgOSLzUrTyB8UN2gSlSGIxcEIfSOyMQ9qPzUOROl2dlVdjSzI*OcngfWax0ODrhLGh2RE8ESBgfqn4rjxBww!!/b&bo=TAO1AgAAAAADB9o!&rf=viewer_4)
+![image](image/bean生命周期.png)
 1. instantiate bean对象实例化
 2. populate properties 封装属性
 3. 如果Bean实现BeanNameAware执行`setBeanName`
