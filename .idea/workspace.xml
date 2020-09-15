@@ -2,37 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7d379e87-6202-4313-8fec-ccb6cb31659b" name="Default" comment="[add]Bean学习笔记">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/spring/example/aop/advisor/MyBeforeAdvice.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/spring/example/aop/advisor/StudentDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/spring/example/aop/advisor/StudentDaoImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/spring/example/aop/autoadvisor/CustomerDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/spring/example/aop/autoadvisor/MyAroundAdvice.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/spring/example/aop/autoadvisor/MyBeforeAdvice.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/spring/example/aop/autoadvisor/StudentDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/spring/example/aop/autoadvisor/StudentDaoImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/spring/example/aop/autobean/CustomerDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/spring/example/aop/autobean/MyAroundAdvice.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/spring/example/aop/autobean/MyBeforeAdvice.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/spring/example/aop/autobean/StudentDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/spring/example/aop/autobean/StudentDaoImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/spring/example/aop/pointcut/CustomerDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/spring/example/aop/pointcut/MyAroundAdvice.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/spring-advisor.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/spring-auto-advisor.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/spring-auto-bean.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/spring-pointcut.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/spring/example/aop/advisor/StudentDaoImplTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/spring/example/aop/autoadvisor/CustomerDaoTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/spring/example/aop/autobean/StudentDaoImplTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/spring/example/aop/pointcut/CustomerDaoTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/spring/example/aop/AOP.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/spring/example/aop/AOP.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/spring-advisor.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/spring-annotation.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/spring-aspectJ.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/spring-auto-advisor.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/spring-auto-bean.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/spring-bean-injection.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/spring-bean.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/spring-injection.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/spring-ioc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/spring-lifecycle.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/spring-pointcut.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/spring-scope.xml" beforeDir="false" />
     </list>
-    <ignored path="$PROJECT_DIR$/out/" />
-    <ignored path="$PROJECT_DIR$/target/" />
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -44,61 +27,6 @@
   <component name="DefaultGradleProjectSettings">
     <option name="testRunner" value="GRADLE" />
     <option name="delegatedBuild" value="true" />
-  </component>
-  <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/spring/example/aop/AOP.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="FIRST">
-              <first_editor relative-caret-position="230">
-                <caret line="110" column="30" selection-start-line="110" selection-start-column="30" selection-end-line="110" selection-end-column="30" />
-              </first_editor>
-              <second_editor />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/spring-auto-advisor.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="188">
-              <caret line="17" column="16" selection-start-line="17" selection-start-column="16" selection-end-line="17" selection-end-column="16" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/spring/example/aop/autoadvisor/StudentDaoImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="6" column="17" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="27" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/spring/example/aop/autoadvisor/CustomerDao.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="6" column="17" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="24" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/com/spring/example/aop/autoadvisor/CustomerDaoTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="218">
-              <caret line="35" column="29" selection-start-line="35" selection-start-column="29" selection-end-line="35" selection-end-column="29" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -113,150 +41,18 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="IdeDocumentHistory">
-    <option name="CHANGED_PATHS">
-      <list>
-        <option value="$PROJECT_DIR$/src/main/java/com/spring/example/aop/advisor/StudentDao.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/spring/example/aop/advisor/StudentDaoImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/spring/example/aop/advisor/MyBeforeAdvice.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/test/java/com/spring/example/aop/advisor/StudentDaoImplTest.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/spring-advisor.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/spring/example/aop/pointcut/CustomerDao.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/spring/example/aop/pointcut/MyAroundAdvice.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/spring/example/aop/pointcut/CustomerDaoTest.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/spring-pointcut.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/spring/example/aop/auto/bean/MyBeforeAdvice.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/spring/example/aop/auto/bean/CustomerDao.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/spring/example/aop/auto/MyAroundAdvice.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/spring/example/aop/auto/StudentDaoImpl.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/spring/example/aop/auto/StudentDaoImplTest.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/spring-auto-bean.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/spring/example/aop/autoAdvisor/MyBeforeAdvice.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/spring/example/aop/autoadvisor/CustomerDaoTest.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/spring-auto-advisor.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/spring/example/aop/AOP.md" />
-      </list>
-    </option>
-  </component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
-        <option name="mavenHome" value="$USER_HOME$/apache-maven-3.6.1" />
-        <option name="userSettingsFile" value="$USER_HOME$/apache-maven-3.6.1/conf/settings.xml" />
+        <option name="localRepository" value="$USER_HOME$/mavenRepository" />
+        <option name="mavenHome" value="$USER_HOME$/apache-maven-3.5.3" />
+        <option name="userSettingsFile" value="$USER_HOME$/apache-maven-3.5.3/conf/settings.xml" />
       </MavenGeneralSettings>
     </option>
-    <option name="importingSettings">
-      <MavenImportingSettings>
-        <option name="importAutomatically" value="true" />
-      </MavenImportingSettings>
-    </option>
-  </component>
-  <component name="MavenProjectNavigator">
-    <treeState>
-      <expand>
-        <path>
-          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="spring-example" type="9519ce18:MavenProjectsStructure$ProjectNode" />
-        </path>
-        <path>
-          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="spring-example" type="9519ce18:MavenProjectsStructure$ProjectNode" />
-          <item name="Lifecycle" type="58874e2:MavenProjectsStructure$LifecycleNode" />
-        </path>
-      </expand>
-      <select />
-    </treeState>
-  </component>
-  <component name="ProjectFrameBounds">
-    <option name="y" value="23" />
-    <option name="width" value="1440" />
-    <option name="height" value="813" />
   </component>
   <component name="ProjectId" id="1bAWrelEUgpNN2EEibs14f3xbM9" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
-  </component>
-  <component name="ProjectView">
-    <navigator proportions="" version="1">
-      <foldersAlwaysOnTop value="true" />
-    </navigator>
-    <panes>
-      <pane id="PackagesPane" />
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="spring-example" type="b2602c69:ProjectViewProjectNode" />
-              <item name="spring-example" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="spring-example" type="b2602c69:ProjectViewProjectNode" />
-              <item name="spring-example" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="spring-example" type="b2602c69:ProjectViewProjectNode" />
-              <item name="spring-example" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="spring-example" type="b2602c69:ProjectViewProjectNode" />
-              <item name="spring-example" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="spring-example" type="b2602c69:ProjectViewProjectNode" />
-              <item name="spring-example" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="example" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="spring-example" type="b2602c69:ProjectViewProjectNode" />
-              <item name="spring-example" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="example" type="462c0819:PsiDirectoryNode" />
-              <item name="aop" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="spring-example" type="b2602c69:ProjectViewProjectNode" />
-              <item name="spring-example" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="example" type="462c0819:PsiDirectoryNode" />
-              <item name="aop" type="462c0819:PsiDirectoryNode" />
-              <item name="autoadvisor" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="spring-example" type="b2602c69:ProjectViewProjectNode" />
-              <item name="spring-example" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="example" type="462c0819:PsiDirectoryNode" />
-              <item name="ioc" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="spring-example" type="b2602c69:ProjectViewProjectNode" />
-              <item name="spring-example" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-      <pane id="Scope" />
-    </panes>
   </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -269,7 +65,8 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources" />
+    <property name="jdk.selected.JAVA_MODULE" value="1.8" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/com/spring/example/aop/image" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="MavenSettings" />
@@ -282,97 +79,40 @@
       <recent name="com.spring.example.aop.advisor" />
       <recent name="com.spring.example.aop.proxy.cglib" />
     </key>
-    <key name="CreateTestDialog.Recents.Supers">
-      <recent name="" />
-    </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.spring.example.bean.lifecycle" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/java/com/spring/example/aop/image" />
       <recent name="$PROJECT_DIR$/src/main/resources" />
       <recent name="$PROJECT_DIR$/src/main/java/com/spring/example/aop/autoAdvisor" />
       <recent name="$PROJECT_DIR$/src/main/java/com/spring/example/aop/auto" />
       <recent name="$PROJECT_DIR$/src/main/java/com/spring/example/aop/auto/bean" />
     </key>
-  </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/java/com/spring/example/bean/image" />
+      <recent name="$PROJECT_DIR$/image" />
+      <recent name="$PROJECT_DIR$/src/main/java/com/spring/example/ioc/image" />
+      <recent name="$PROJECT_DIR$/src/main/java/com/spring/example/ioc" />
+    </key>
   </component>
   <component name="RunManager" selected="JUnit.CustomerDaoTest.test (1)">
-    <configuration default="true" type="tests" factoryName="Nosetests">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="_new_regexPattern" value="&quot;&quot;" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;&quot;" />
-      <option name="_new_targetType" value="&quot;PATH&quot;" />
-      <method v="2" />
-    </configuration>
-    <configuration default="true" type="tests" factoryName="Twisted Trial">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;&quot;" />
-      <option name="_new_targetType" value="&quot;PATH&quot;" />
-      <method v="2" />
-    </configuration>
-    <configuration default="true" type="tests" factoryName="Unittests">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;&quot;" />
-      <option name="_new_targetType" value="&quot;PATH&quot;" />
-      <method v="2" />
-    </configuration>
-    <configuration default="true" type="tests" factoryName="py.test">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="_new_keywords" value="&quot;&quot;" />
-      <option name="_new_parameters" value="&quot;&quot;" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;&quot;" />
-      <option name="_new_targetType" value="&quot;PATH&quot;" />
-      <method v="2" />
-    </configuration>
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -481,13 +221,11 @@
       <item itemvalue="JUnit.StudentDaoImplTest.test" />
       <item itemvalue="JUnit.CustomerDaoTest.test" />
       <item itemvalue="JUnit.CustomerDaoTest" />
-      <item itemvalue="JUnit.StudentDaoImplTest.test (1)" />
       <item itemvalue="JUnit.CustomerDaoTest.test (1)" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.CustomerDaoTest.test (1)" />
-        <item itemvalue="JUnit.StudentDaoImplTest.test (1)" />
         <item itemvalue="JUnit.CustomerDaoTest" />
         <item itemvalue="JUnit.CustomerDaoTest.test" />
         <item itemvalue="JUnit.StudentDaoImplTest.test" />
@@ -518,6 +256,12 @@
       <workItem from="1588222920878" duration="2221000" />
       <workItem from="1588402623435" duration="384000" />
       <workItem from="1588483494352" duration="5597000" />
+      <workItem from="1589190105208" duration="6000" />
+      <workItem from="1589190133485" duration="1402000" />
+      <workItem from="1590376709080" duration="3437000" />
+      <workItem from="1590398226181" duration="3538000" />
+      <workItem from="1595124675725" duration="16000" />
+      <workItem from="1595124695638" duration="1158000" />
     </task>
     <task id="LOCAL-00001" summary="[update]spring版本">
       <created>1587653504977</created>
@@ -540,7 +284,21 @@
       <option name="project" value="LOCAL" />
       <updated>1588076125900</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="[add]笔记整理">
+      <created>1590400660668</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1590400660668</updated>
+    </task>
+    <task id="LOCAL-00005" summary="[update]Spring版本">
+      <created>1590401715295</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1590401715295</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -575,56 +333,22 @@
       <configuration name="CustomerDaoTest.test (1)" configurationId="JUnit" />
     </history-entry>
   </component>
-  <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5981000" />
-  </component>
-  <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1440" height="813" extended-state="0" />
-    <editor active="true" />
-    <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2532189" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Designer" order="2" />
-      <window_info id="Image Layers" order="3" />
-      <window_info id="Capture Tool" order="4" />
-      <window_info id="UI Designer" order="5" />
-      <window_info id="Favorites" order="6" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.4269341" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.39971346" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Spring" order="7" />
-      <window_info anchor="bottom" id="Terminal" order="8" />
-      <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info anchor="bottom" id="Problems" order="11" />
-      <window_info anchor="bottom" id="Database Changes" order="12" />
-      <window_info anchor="bottom" id="Version Control" order="13" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Maven" order="3" weight="0.3297568" />
-      <window_info anchor="right" id="Palette" order="4" />
-      <window_info anchor="right" id="Capture Analysis" order="5" />
-      <window_info anchor="right" id="Database" order="6" />
-      <window_info anchor="right" id="Palette&#9;" order="7" />
-      <window_info anchor="right" id="Theme Preview" order="8" />
-    </layout>
-  </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
+    <option name="version" value="2" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="[update]spring版本" />
     <MESSAGE value="[add]Bean学习" />
     <MESSAGE value="[add]Bean学习笔记" />
-    <option name="LAST_COMMIT_MESSAGE" value="[add]Bean学习笔记" />
+    <MESSAGE value="[add]笔记整理" />
+    <MESSAGE value="[update]Spring版本" />
+    <option name="LAST_COMMIT_MESSAGE" value="[update]Spring版本" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="208" y="23" key="#Project_Structure" timestamp="1589186355607">
+      <screen x="0" y="23" width="1440" height="813" />
+    </state>
+    <state x="208" y="23" key="#Project_Structure/0.23.1440.813@0.23.1440.813" timestamp="1589186355607" />
     <state x="533" y="143" key="#com.intellij.ide.util.MemberChooser" timestamp="1588222372597">
       <screen x="0" y="23" width="1440" height="813" />
     </state>
@@ -634,10 +358,11 @@
       <screen x="0" y="23" width="1440" height="813" />
     </state>
     <state x="307" y="361" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/0.23.1440.813/1440.-102.1920.1057@0.23.1440.813" timestamp="1588139394096" />
-    <state x="213" y="23" key="CommitChangelistDialog2" timestamp="1588076125642">
-      <screen x="0" y="23" width="1440" height="813" />
+    <state x="213" y="23" key="CommitChangelistDialog2" timestamp="1590401715096">
+      <screen x="0" y="23" width="1440" height="814" />
     </state>
     <state x="213" y="23" key="CommitChangelistDialog2/0.23.1440.813/1440.-102.1920.1057@0.23.1440.813" timestamp="1588076125642" />
+    <state x="213" y="23" key="CommitChangelistDialog2/0.23.1440.814/1440.-102.1920.1057@0.23.1440.814" timestamp="1590401715096" />
     <state width="1398" height="237" key="GridCell.Tab.0.bottom" timestamp="1588222889670">
       <screen x="0" y="23" width="1440" height="813" />
     </state>
@@ -662,19 +387,42 @@
       <screen x="0" y="23" width="1440" height="813" />
     </state>
     <state x="349" y="136" key="NewModule_or_Project.wizard/0.23.1440.813/1440.-102.1920.1057@0.23.1440.813" timestamp="1588142542002" />
-    <state x="229" y="68" key="SettingsEditor" timestamp="1588076029565">
-      <screen x="0" y="23" width="1440" height="813" />
+    <state x="229" y="68" key="SettingsEditor" timestamp="1590401105575">
+      <screen x="0" y="23" width="1440" height="814" />
     </state>
     <state x="229" y="68" key="SettingsEditor/0.23.1440.813/1440.-102.1920.1057@0.23.1440.813" timestamp="1588076029565" />
-    <state x="320" y="169" key="Vcs.Push.Dialog.v2" timestamp="1588076128030">
-      <screen x="0" y="23" width="1440" height="813" />
+    <state x="229" y="68" key="SettingsEditor/0.23.1440.813@0.23.1440.813" timestamp="1589186382816" />
+    <state x="229" y="68" key="SettingsEditor/0.23.1440.814/1440.-102.1920.1057@0.23.1440.814" timestamp="1590401105575" />
+    <state x="320" y="169" key="Vcs.Push.Dialog.v2" timestamp="1590401746861">
+      <screen x="0" y="23" width="1440" height="814" />
     </state>
     <state x="320" y="169" key="Vcs.Push.Dialog.v2/0.23.1440.813/1440.-102.1920.1057@0.23.1440.813" timestamp="1588076128030" />
+    <state x="320" y="169" key="Vcs.Push.Dialog.v2/0.23.1440.814/1440.-102.1920.1057@0.23.1440.814" timestamp="1590401746861" />
     <state x="464" y="222" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1588222084949">
       <screen x="0" y="23" width="1440" height="813" />
     </state>
     <state x="464" y="222" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.23.1440.813/1440.-102.1920.1057@0.23.1440.813" timestamp="1588139587114" />
     <state x="464" y="222" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.23.1440.813@0.23.1440.813" timestamp="1588222084949" />
+    <state x="414" y="225" key="git4idea.merge.GitPullDialog" timestamp="1589186360687">
+      <screen x="0" y="23" width="1440" height="813" />
+    </state>
+    <state x="414" y="225" key="git4idea.merge.GitPullDialog/0.23.1440.813@0.23.1440.813" timestamp="1589186360687" />
+    <state x="503" y="335" key="git4idea.ui.GitStashDialog" timestamp="1589186281049">
+      <screen x="0" y="23" width="1440" height="813" />
+    </state>
+    <state x="503" y="335" key="git4idea.ui.GitStashDialog/0.23.1440.813@0.23.1440.813" timestamp="1589186281049" />
+    <state x="480" y="226" key="git4idea.ui.GitUnstashDialog" timestamp="1589186311393">
+      <screen x="0" y="23" width="1440" height="813" />
+    </state>
+    <state x="480" y="226" key="git4idea.ui.GitUnstashDialog/0.23.1440.813@0.23.1440.813" timestamp="1589186311393" />
+    <state x="114" y="93" key="new project wizard" timestamp="1590385280852">
+      <screen x="0" y="23" width="1440" height="816" />
+    </state>
+    <state x="114" y="93" key="new project wizard/0.23.1440.816/1440.-102.1920.1057@0.23.1440.816" timestamp="1590385280852" />
+    <state x="393" y="120" key="spring file set editor" timestamp="1589186926399">
+      <screen x="0" y="23" width="1440" height="813" />
+    </state>
+    <state x="393" y="120" key="spring file set editor/0.23.1440.813@0.23.1440.813" timestamp="1589186926399" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -682,253 +430,9 @@
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/com/spring/example/aop/advisor/StudentDaoImplTest.java</url>
           <line>26</line>
-          <properties />
           <option name="timeStamp" value="1" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
-  </component>
-  <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/spring/example/aop/advisor/MyBeforeAdvice.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="35" selection-start-line="15" selection-start-column="35" selection-end-line="15" selection-end-column="35" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/spring/example/aop/advisor/StudentDaoImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="21" selection-start-line="6" selection-start-column="21" selection-end-line="6" selection-end-column="21" />
-          <folding>
-            <element signature="e#182#183#0" expanded="true" />
-            <element signature="e#218#219#0" expanded="true" />
-            <element signature="e#267#268#0" expanded="true" />
-            <element signature="e#312#313#0" expanded="true" />
-            <element signature="e#354#355#0" expanded="true" />
-            <element signature="e#399#400#0" expanded="true" />
-            <element signature="e#441#442#0" expanded="true" />
-            <element signature="e#486#487#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="109">
-          <caret line="61" column="48" selection-start-line="61" selection-start-column="48" selection-end-line="61" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/spring/example/aop/advisor/StudentDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="21" selection-start-line="4" selection-start-column="21" selection-end-line="4" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/spring/example/aop/advisor/StudentDaoImplTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="26" selection-start-line="26" selection-end-line="26" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/spring-advisor.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="267">
-          <caret line="19" column="23" selection-start-line="19" selection-start-column="23" selection-end-line="19" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/spring/example/aop/pointcut/MyAroundAdvice.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" column="17" selection-start-line="13" selection-start-column="17" selection-end-line="13" selection-end-column="17" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/spring/example/aop/pointcut/CustomerDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="78">
-          <caret line="6" column="20" selection-start-line="6" selection-start-column="20" selection-end-line="6" selection-end-column="20" />
-          <folding>
-            <element signature="e#190#191#0" expanded="true" />
-            <element signature="e#261#262#0" expanded="true" />
-            <element signature="e#334#335#0" expanded="true" />
-            <element signature="e#407#408#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/spring-pointcut.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="65" selection-start-line="17" selection-start-column="65" selection-end-line="17" selection-end-column="65" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/spring/example/aop/pointcut/CustomerDaoTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="17" lean-forward="true" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="17" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/spring/example/aop/auto/bean.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="17" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/spring/example/aop/auto/bean/StudentDaoImpl.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/spring/example/aop/auto/bean/StudentDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="17" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/spring/example/aop/auto/bean/MyBeforeAdvice.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="26" selection-start-column="19" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/spring/example/aop/auto/bean/MyAroundAdvice.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/spring/example/aop/auto/bean/CustomerDao.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/spring/example/aop/autobean/StudentDao.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/spring/example/aop/autobean/MyBeforeAdvice.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/spring/example/aop/autobean/MyAroundAdvice.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/spring/example/aop/autobean/CustomerDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/spring/example/aop/autobean/StudentDaoImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="23" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/spring/example/aop/autobean/StudentDaoImplTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="26" selection-start-line="26" selection-end-line="26" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/spring-auto-bean.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="254">
-          <caret line="17" column="49" selection-start-line="17" selection-start-column="49" selection-end-line="17" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/spring/example/aop/autoAdvisor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="24" selection-start-line="6" selection-start-column="24" selection-end-line="6" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/spring/example/aop/autoadvisor/StudentDao.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/spring/example/aop/autoadvisor/MyAroundAdvice.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/spring/example/aop/autoadvisor/MyBeforeAdvice.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/spring/example/aop/autoadvisor/StudentDaoImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="17" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/spring/example/aop/autoadvisor/CustomerDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="17" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/spring/example/aop/autoadvisor/CustomerDaoTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="218">
-          <caret line="35" column="29" selection-start-line="35" selection-start-column="29" selection-end-line="35" selection-end-column="29" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/spring-auto-advisor.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="188">
-          <caret line="17" column="16" selection-start-line="17" selection-start-column="16" selection-end-line="17" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/spring/example/aop/AOP.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="FIRST">
-          <first_editor relative-caret-position="230">
-            <caret line="110" column="30" selection-start-line="110" selection-start-column="30" selection-end-line="110" selection-end-column="30" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-  </component>
-  <component name="masterDetails">
-    <states>
-      <state key="ProjectJDKs.UI">
-        <settings>
-          <last-edited>1.8</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-    </states>
   </component>
 </project>
