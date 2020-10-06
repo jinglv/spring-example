@@ -2,19 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7d379e87-6202-4313-8fec-ccb6cb31659b" name="Default" comment="[add]Bean学习笔记">
+      <change afterPath="$PROJECT_DIR$/.idea/saveactions_settings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/spring/example/aop/aspectJ/anno/ProductAspectAnno.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/spring/example/aop/aspectJ/anno/ProductDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/spring/example/aop/aspectJ/xml/CustomerAspectXml.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/spring/example/aop/aspectJ/xml/CustomerDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/spring/example/aop/aspectJ/xml/CustomerDAOImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/spring-aspectJ-xml.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/spring/example/aop/aspectJ/ProductDAOTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/spring/example/aop/aspectJ/xml/CustomerDAOTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/spring-advisor.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/spring-annotation.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/spring-aspectJ.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/spring-auto-advisor.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/spring-auto-bean.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/spring-bean-injection.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/spring-bean.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/spring-injection.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/spring-ioc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/spring-lifecycle.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/spring-pointcut.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/spring-scope.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/spring/example/aop/AOP.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/spring/example/aop/AOP.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/spring-aspectJ.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/spring-aspectJ.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,8 +31,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
         <option value="spring-beans.schema" />
+        <option value="Interface" />
         <option value="Class" />
         <option value="JUnit4 Test Class" />
       </list>
@@ -55,9 +55,7 @@
     <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="ProjectViewState">
-    <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
-    <option name="showMembers" value="true" />
   </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
@@ -66,31 +64,18 @@
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
     <property name="jdk.selected.JAVA_MODULE" value="1.8" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/com/spring/example/aop/image" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="settings.editor.selected.configurable" value="MavenSettings" />
+    <property name="settings.editor.selected.configurable" value="settings.saveactions" />
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.spring.example.aop.aspectJ.xml" />
+      <recent name="com.spring.example.aop.aspectJ" />
       <recent name="com.spring.example.aop.autoadvisor" />
       <recent name="com.spring.example.aop.auto" />
       <recent name="com.spring.example.aop.pointcut" />
-      <recent name="com.spring.example.aop.advisor" />
-      <recent name="com.spring.example.aop.proxy.cglib" />
-    </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="com.spring.example.bean.lifecycle" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/main/java/com/spring/example/aop/image" />
-      <recent name="$PROJECT_DIR$/src/main/resources" />
-      <recent name="$PROJECT_DIR$/src/main/java/com/spring/example/aop/autoAdvisor" />
-      <recent name="$PROJECT_DIR$/src/main/java/com/spring/example/aop/auto" />
-      <recent name="$PROJECT_DIR$/src/main/java/com/spring/example/aop/auto/bean" />
-    </key>
-    <key name="CreateTestDialog.Recents.Supers">
-      <recent name="" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/main/java/com/spring/example/bean/image" />
@@ -98,21 +83,40 @@
       <recent name="$PROJECT_DIR$/src/main/java/com/spring/example/ioc/image" />
       <recent name="$PROJECT_DIR$/src/main/java/com/spring/example/ioc" />
     </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.spring.example.bean.lifecycle" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/resources" />
+      <recent name="$PROJECT_DIR$/src/main/java/com/spring/example/aop/image" />
+      <recent name="$PROJECT_DIR$/src/main/java/com/spring/example/aop/autoAdvisor" />
+      <recent name="$PROJECT_DIR$/src/main/java/com/spring/example/aop/auto" />
+      <recent name="$PROJECT_DIR$/src/main/java/com/spring/example/aop/auto/bean" />
+    </key>
   </component>
-  <component name="RunManager" selected="JUnit.CustomerDaoTest.test (1)">
+  <component name="RunManager" selected="JUnit.CustomerDAOTest.test">
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="class" />
+    <configuration name="CustomerDAOTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="spring-example" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.spring.example.aop.aspectJ.xml.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.spring.example.aop.aspectJ.xml" />
+      <option name="MAIN_CLASS_NAME" value="com.spring.example.aop.aspectJ.xml.CustomerDAOTest" />
+      <option name="METHOD_NAME" value="test" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -167,16 +171,16 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="StudentDaoImplTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ProductDAOTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="spring-example" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.spring.example.aop.advisor.*" />
+          <option name="PATTERN" value="com.spring.example.aop.aspectJ.anno.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.spring.example.aop.advisor" />
-      <option name="MAIN_CLASS_NAME" value="com.spring.example.aop.advisor.StudentDaoImplTest" />
+      <option name="PACKAGE_NAME" value="com.spring.example.aop.aspectJ" />
+      <option name="MAIN_CLASS_NAME" value="com.spring.example.aop.aspectJ.ProductDAOTest" />
       <option name="METHOD_NAME" value="test" />
       <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
@@ -218,17 +222,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="JUnit.StudentDaoImplTest.test" />
       <item itemvalue="JUnit.CustomerDaoTest.test" />
       <item itemvalue="JUnit.CustomerDaoTest" />
       <item itemvalue="JUnit.CustomerDaoTest.test (1)" />
+      <item itemvalue="JUnit.ProductDAOTest.test" />
+      <item itemvalue="JUnit.CustomerDAOTest.test" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.CustomerDAOTest.test" />
+        <item itemvalue="JUnit.ProductDAOTest.test" />
         <item itemvalue="JUnit.CustomerDaoTest.test (1)" />
         <item itemvalue="JUnit.CustomerDaoTest" />
         <item itemvalue="JUnit.CustomerDaoTest.test" />
-        <item itemvalue="JUnit.StudentDaoImplTest.test" />
       </list>
     </recent_temporary>
   </component>
@@ -301,38 +307,6 @@
     <option name="localTasksCounter" value="6" />
     <servers />
   </component>
-  <component name="TestHistory">
-    <history-entry file="StudentDaoImplTest_test - 2020.05.03 at 13h 51m 13s.xml">
-      <configuration name="StudentDaoImplTest.test" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="StudentDaoImplTest_test - 2020.05.03 at 13h 57m 04s.xml">
-      <configuration name="StudentDaoImplTest.test" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="StudentDaoImplTest_test - 2020.05.03 at 13h 57m 15s.xml">
-      <configuration name="StudentDaoImplTest.test" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="CustomerDaoTest_test - 2020.05.03 at 14h 17m 18s.xml">
-      <configuration name="CustomerDaoTest.test" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="CustomerDaoTest - 2020.05.03 at 14h 17m 43s.xml">
-      <configuration name="CustomerDaoTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="CustomerDaoTest_test - 2020.05.03 at 14h 18m 01s.xml">
-      <configuration name="CustomerDaoTest.test" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="CustomerDaoTest - 2020.05.03 at 14h 18m 39s.xml">
-      <configuration name="CustomerDaoTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="CustomerDaoTest - 2020.05.03 at 14h 19m 49s.xml">
-      <configuration name="CustomerDaoTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="StudentDaoImplTest_test_(1) - 2020.05.03 at 14h 40m 20s.xml">
-      <configuration name="StudentDaoImplTest.test (1)" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="CustomerDaoTest_test_(1) - 2020.05.03 at 14h 56m 33s.xml">
-      <configuration name="CustomerDaoTest.test (1)" configurationId="JUnit" />
-    </history-entry>
-  </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="2" />
   </component>
@@ -345,84 +319,42 @@
     <option name="LAST_COMMIT_MESSAGE" value="[update]Spring版本" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="208" y="23" key="#Project_Structure" timestamp="1589186355607">
-      <screen x="0" y="23" width="1440" height="813" />
+    <state x="533" y="142" key="#com.intellij.ide.util.MemberChooser" timestamp="1601960716028">
+      <screen x="0" y="23" width="1440" height="811" />
     </state>
-    <state x="208" y="23" key="#Project_Structure/0.23.1440.813@0.23.1440.813" timestamp="1589186355607" />
-    <state x="533" y="143" key="#com.intellij.ide.util.MemberChooser" timestamp="1588222372597">
-      <screen x="0" y="23" width="1440" height="813" />
+    <state x="533" y="142" key="#com.intellij.ide.util.MemberChooser/0.23.1440.811@0.23.1440.811" timestamp="1601960716028" />
+    <state x="297" y="23" key="CommitChangelistDialog2" timestamp="1601957507994">
+      <screen x="0" y="23" width="1440" height="811" />
     </state>
-    <state x="533" y="143" key="#com.intellij.ide.util.MemberChooser/0.23.1440.813/1440.-102.1920.1057@0.23.1440.813" timestamp="1588139890708" />
-    <state x="533" y="143" key="#com.intellij.ide.util.MemberChooser/0.23.1440.813@0.23.1440.813" timestamp="1588222372597" />
-    <state x="307" y="361" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1588139394096">
-      <screen x="0" y="23" width="1440" height="813" />
+    <state x="297" y="23" key="CommitChangelistDialog2/0.23.1440.811@0.23.1440.811" timestamp="1601957507994" />
+    <state width="1396" height="287" key="GridCell.Tab.0.bottom" timestamp="1601965365654">
+      <screen x="0" y="23" width="1440" height="811" />
     </state>
-    <state x="307" y="361" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/0.23.1440.813/1440.-102.1920.1057@0.23.1440.813" timestamp="1588139394096" />
-    <state x="213" y="23" key="CommitChangelistDialog2" timestamp="1590401715096">
-      <screen x="0" y="23" width="1440" height="814" />
+    <state width="1396" height="287" key="GridCell.Tab.0.bottom/0.23.1440.811@0.23.1440.811" timestamp="1601965365654" />
+    <state width="1396" height="287" key="GridCell.Tab.0.center" timestamp="1601965365654">
+      <screen x="0" y="23" width="1440" height="811" />
     </state>
-    <state x="213" y="23" key="CommitChangelistDialog2/0.23.1440.813/1440.-102.1920.1057@0.23.1440.813" timestamp="1588076125642" />
-    <state x="213" y="23" key="CommitChangelistDialog2/0.23.1440.814/1440.-102.1920.1057@0.23.1440.814" timestamp="1590401715096" />
-    <state width="1398" height="237" key="GridCell.Tab.0.bottom" timestamp="1588222889670">
-      <screen x="0" y="23" width="1440" height="813" />
+    <state width="1396" height="287" key="GridCell.Tab.0.center/0.23.1440.811@0.23.1440.811" timestamp="1601965365654" />
+    <state width="1396" height="287" key="GridCell.Tab.0.left" timestamp="1601965365653">
+      <screen x="0" y="23" width="1440" height="811" />
     </state>
-    <state width="1398" height="200" key="GridCell.Tab.0.bottom/0.23.1440.813/1440.-102.1920.1057@0.23.1440.813" timestamp="1588140070691" />
-    <state width="1398" height="237" key="GridCell.Tab.0.bottom/0.23.1440.813@0.23.1440.813" timestamp="1588222889670" />
-    <state width="1398" height="237" key="GridCell.Tab.0.center" timestamp="1588222889669">
-      <screen x="0" y="23" width="1440" height="813" />
+    <state width="1396" height="287" key="GridCell.Tab.0.left/0.23.1440.811@0.23.1440.811" timestamp="1601965365653" />
+    <state width="1396" height="287" key="GridCell.Tab.0.right" timestamp="1601965365654">
+      <screen x="0" y="23" width="1440" height="811" />
     </state>
-    <state width="1398" height="200" key="GridCell.Tab.0.center/0.23.1440.813/1440.-102.1920.1057@0.23.1440.813" timestamp="1588140070690" />
-    <state width="1398" height="237" key="GridCell.Tab.0.center/0.23.1440.813@0.23.1440.813" timestamp="1588222889669" />
-    <state width="1398" height="237" key="GridCell.Tab.0.left" timestamp="1588222889669">
-      <screen x="0" y="23" width="1440" height="813" />
+    <state width="1396" height="287" key="GridCell.Tab.0.right/0.23.1440.811@0.23.1440.811" timestamp="1601965365654" />
+    <state x="221" y="67" key="SettingsEditor" timestamp="1601955784523">
+      <screen x="0" y="23" width="1440" height="811" />
     </state>
-    <state width="1398" height="200" key="GridCell.Tab.0.left/0.23.1440.813/1440.-102.1920.1057@0.23.1440.813" timestamp="1588140070690" />
-    <state width="1398" height="237" key="GridCell.Tab.0.left/0.23.1440.813@0.23.1440.813" timestamp="1588222889669" />
-    <state width="1398" height="237" key="GridCell.Tab.0.right" timestamp="1588222889669">
-      <screen x="0" y="23" width="1440" height="813" />
+    <state x="221" y="67" key="SettingsEditor/0.23.1440.811@0.23.1440.811" timestamp="1601955784523" />
+    <state x="462" y="209" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1601964314596">
+      <screen x="0" y="23" width="1440" height="811" />
     </state>
-    <state width="1398" height="200" key="GridCell.Tab.0.right/0.23.1440.813/1440.-102.1920.1057@0.23.1440.813" timestamp="1588140070690" />
-    <state width="1398" height="237" key="GridCell.Tab.0.right/0.23.1440.813@0.23.1440.813" timestamp="1588222889669" />
-    <state x="349" y="136" key="NewModule_or_Project.wizard" timestamp="1588142542002">
-      <screen x="0" y="23" width="1440" height="813" />
+    <state x="462" y="209" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.23.1440.811@0.23.1440.811" timestamp="1601964314596" />
+    <state x="383" y="119" key="spring file set editor" timestamp="1601886663957">
+      <screen x="0" y="23" width="1440" height="811" />
     </state>
-    <state x="349" y="136" key="NewModule_or_Project.wizard/0.23.1440.813/1440.-102.1920.1057@0.23.1440.813" timestamp="1588142542002" />
-    <state x="229" y="68" key="SettingsEditor" timestamp="1590401105575">
-      <screen x="0" y="23" width="1440" height="814" />
-    </state>
-    <state x="229" y="68" key="SettingsEditor/0.23.1440.813/1440.-102.1920.1057@0.23.1440.813" timestamp="1588076029565" />
-    <state x="229" y="68" key="SettingsEditor/0.23.1440.813@0.23.1440.813" timestamp="1589186382816" />
-    <state x="229" y="68" key="SettingsEditor/0.23.1440.814/1440.-102.1920.1057@0.23.1440.814" timestamp="1590401105575" />
-    <state x="320" y="169" key="Vcs.Push.Dialog.v2" timestamp="1590401746861">
-      <screen x="0" y="23" width="1440" height="814" />
-    </state>
-    <state x="320" y="169" key="Vcs.Push.Dialog.v2/0.23.1440.813/1440.-102.1920.1057@0.23.1440.813" timestamp="1588076128030" />
-    <state x="320" y="169" key="Vcs.Push.Dialog.v2/0.23.1440.814/1440.-102.1920.1057@0.23.1440.814" timestamp="1590401746861" />
-    <state x="464" y="222" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1588222084949">
-      <screen x="0" y="23" width="1440" height="813" />
-    </state>
-    <state x="464" y="222" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.23.1440.813/1440.-102.1920.1057@0.23.1440.813" timestamp="1588139587114" />
-    <state x="464" y="222" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.23.1440.813@0.23.1440.813" timestamp="1588222084949" />
-    <state x="414" y="225" key="git4idea.merge.GitPullDialog" timestamp="1589186360687">
-      <screen x="0" y="23" width="1440" height="813" />
-    </state>
-    <state x="414" y="225" key="git4idea.merge.GitPullDialog/0.23.1440.813@0.23.1440.813" timestamp="1589186360687" />
-    <state x="503" y="335" key="git4idea.ui.GitStashDialog" timestamp="1589186281049">
-      <screen x="0" y="23" width="1440" height="813" />
-    </state>
-    <state x="503" y="335" key="git4idea.ui.GitStashDialog/0.23.1440.813@0.23.1440.813" timestamp="1589186281049" />
-    <state x="480" y="226" key="git4idea.ui.GitUnstashDialog" timestamp="1589186311393">
-      <screen x="0" y="23" width="1440" height="813" />
-    </state>
-    <state x="480" y="226" key="git4idea.ui.GitUnstashDialog/0.23.1440.813@0.23.1440.813" timestamp="1589186311393" />
-    <state x="114" y="93" key="new project wizard" timestamp="1590385280852">
-      <screen x="0" y="23" width="1440" height="816" />
-    </state>
-    <state x="114" y="93" key="new project wizard/0.23.1440.816/1440.-102.1920.1057@0.23.1440.816" timestamp="1590385280852" />
-    <state x="393" y="120" key="spring file set editor" timestamp="1589186926399">
-      <screen x="0" y="23" width="1440" height="813" />
-    </state>
-    <state x="393" y="120" key="spring file set editor/0.23.1440.813@0.23.1440.813" timestamp="1589186926399" />
+    <state x="383" y="119" key="spring file set editor/0.23.1440.811@0.23.1440.811" timestamp="1601886663957" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

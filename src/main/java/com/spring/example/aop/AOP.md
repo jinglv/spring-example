@@ -4,6 +4,7 @@
 - AOP采用横向抽取机制，取代了传统纵向继承体系重复性代码（性能监视、事务管理、安全检查、缓存）
 - Spring AOP使用纯Java实现，不需要专门的编译过程和类加载器，在运行期通过代理方式向目标类织入增强代码
 ![image](image/什么是AOP.png)
+
 ## AOP相关术语
 - Joinpoint（连接点）：所谓连接点是指那些被拦截到的点。在Spring中，这些点指的是方法，因为spring只支持方法类型的连接点
 - Pointcut（切入点）：所谓切入点是指我们要对那些Joinpoint进行拦截的定义
@@ -17,6 +18,7 @@
 - Proxy（代理）：一个类被AOP织入增强后，就产生一个结果代理类
 - Aspect（切面）：是切入点和通知（引介）的结合
 ![image](image/AOP相关术语.png)
+
 # AOP的底层实现
 ## JDK动态代理
 jdk动态代理实现，见实例：package com.spring.example.aop.proxy.jdk;
@@ -121,6 +123,8 @@ DefaultAdvisorAutoProxyCreator
     - com.springsource.org.aopalliance-1.0.0.jar
     - spring-aspects-xxx.xx.xx.RELEASE.jar
     - com.springsource.org.aspectj.weaver-1.6.8.RELEASE.jar
+    
+### 环境准备
 
 pom.xml引入依赖
 ```
@@ -165,16 +169,17 @@ pom.xml引入依赖
 
 </beans>
 ```
+### 注解开发
 
-### @AspectJ提供不同的通知类型
+#### @AspectJ提供不同的通知类型
 - @Before 前置通知，相当于BeforeAdvice
-- @AfterReturning 后置通知，相当于AfterReturningAdvice
+- @AfterReturning 后置通知，相当于AfterReturningAdvice，应用场景例如：删除操作的日志记录
 - @Around 环绕通知，相当于MethodInterceptor，应用场景例如：事务管理
 - @AfterThrowing异常抛出通知，相当于ThrowAdvice
 - @After 最终final通知，不管是否异常，该通知都会执行
-- @DeclareParents 引介通知，相当于IntroductionInterceptor（不要求掌握）
+- @DeclareParents 引介通知，相当于IntroductionInterceptor（了解即可）
 
-### 在通知中通过value属性定义切点
+#### 在通知中通过value属性定义切点
 - 通过execution函数，可以定义切点的方法切入
 - 语法
     ```
@@ -189,9 +194,9 @@ pom.xml引入依赖
     ```
     execution(* com.xxx.dao.*(..))  // 不包含子包
     ```
-    - ..表示包、子包下所有类
+    - `..*`表示包、子包下所有类
     ```
-    execution(* com.xxx.dao..*(..))
+    execution(* com.xxx.dao..*(..)) // ..*表示包、子包下所有类
     ```
     - 匹配指定类所有方法
     ```
@@ -205,3 +210,98 @@ pom.xml引入依赖
     ```
     execution(* save*(..))
     ``` 
+  
+#### aspectJ入门案例
+spring-aspectJ.xml的配置
+```xml
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+            http://www.springframework.org/schema/beans/spring-beans.xsd
+            http://www.springframework.org/schema/aop
+            http://www.springframework.org/schema/aop/spring-aop.xsd">
+    <!--开启AspectJ自动代理-->
+    <aop:aspectj-autoproxy/>
+
+    <!--目标类-->
+    <bean id="productDAO" class="com.spring.example.aop.aspectJ.anno.ProductDAO" />
+
+    <!--定义切面-->
+    <bean class="com.spring.example.aop.aspectJ.anno.ProductAspectAnno" />
+
+</beans>
+```
+
+- @Before前置通知
+    - 可以在方法中传入JoinPoint对象，用来获得切点信息
+    ```
+    @Before(value = "execution(* com.spring.example.aop.aspectJ.anno.ProductDAO.*(..))")
+    public void before(JoinPoint joinPoint){
+        System.out.println("前置通知===" + joinPoint);
+    }
+    ```
+- @AfterReturning后置通知
+    - 通过returning属性可以定义方法返回值，作为参数
+    ```
+    @AfterReturning(value = "execution(* com.spring.example.aop.aspectJ.anno.ProductDAO.update(..))", returning = "result")
+    public void  afterReturning(Object result){
+        System.out.println("后置通知===" + result);
+    }
+    ```
+- @Around环绕通知
+    - around方法的返回值就是目标代理方法执行返回值
+    - 参数为ProceedingJoinPoint可以调用拦截目标方法执行
+    ```
+    @Around(value = "execution(* com.spring.example.aop.aspectJ.anno.ProductDAO.delete(..))")
+    public Object around(ProceedingJoinPoint proceedingJoinPoint) {
+        Object proceed = null;
+        try {
+            System.out.println("环绕前通知===");
+            // 执行目标方法
+            proceed = proceedingJoinPoint.proceed();
+            System.out.println("环绕后通知===");
+        } catch (Throwable throwable) {
+            throwable.printStackTrace();
+        }
+        return proceed;
+    }
+    ```
+    - 重点：如果不调用ProceedingJoinPoint的proceed方法，那么目标方法就被拦截了
+ - @AfterThrowing异常抛出通知
+    - 通过设置throwing属性，可以设置发送异常对象参数
+    ```
+   @AfterThrowing(value = "execution(* com.spring.example.aop.aspectJ.anno.ProductDAO.findOne(..))", throwing = "e")
+   public void afterThrowing(Throwable e){
+       System.out.println("异常抛出通知====" + e.getMessage());
+   }
+    ```
+- @After最终通知
+    - 无论是否出现异常，最终通知总是会被执行的
+    
+#### 通过@Pointcut为切点命名
+- 在每个通知内定义切点，会造成工作量大，不易维护，对于重复的切点，可以使用@Pointcut进行定义
+- 切点方法：private void 无参数方法，方法名为切点名
+- 当通知多个切点时，可以使用||进行连接
+- 定义
+    ```
+    @Pointcut(value = "execution(* com.spring.example.aop.aspectJ.anno.ProductDAO.save(..))")
+    private void pointcutSave() {}
+  
+    @Pointcut(value = "execution(* com.spring.example.aop.aspectJ.anno.ProductDAO.update(..))")
+    private void pointcutUpdate() {}
+    ```
+- 使用
+    ```
+    @Before(value = "pointcutSave() || pointcutUpdate()")
+    public void before(JoinPoint joinPoint) {
+        System.out.println("前置通知===" + joinPoint);
+    }
+    ```
+
+### 基于AspectJ的XML方式的AOP开发
+#### 使用XML配置方式
+1. 编写切面类
+2. 切面类的配置
+3. AOP增强配置
