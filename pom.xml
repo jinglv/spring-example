@@ -20,7 +20,7 @@
         <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
-            <version>4.12</version>
+            <version>4.13.1</version>
         </dependency>
         <!--Spring相关依赖包-->
         <!--提供了框架的基本组成部分，包括 IoC 和依赖注入功能-->
