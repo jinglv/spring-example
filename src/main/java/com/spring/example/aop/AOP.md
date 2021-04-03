@@ -1,23 +1,23 @@
 # AOP概述
 ## 什么是AOP
-- AOP：Aspect Oriented Programming
+- AOP：Aspect Oriented Programming 面向切面编程
 - AOP采用横向抽取机制，取代了传统纵向继承体系重复性代码（性能监视、事务管理、安全检查、缓存）
 - Spring AOP使用纯Java实现，不需要专门的编译过程和类加载器，在运行期通过代理方式向目标类织入增强代码
-![image](image/什么是AOP.png)
+![image-20210403223442950](https://gitee.com/JeanLv/study_image2/raw/master///image-20210403223442950.png)
 
 ## AOP相关术语
 - Joinpoint（连接点）：所谓连接点是指那些被拦截到的点。在Spring中，这些点指的是方法，因为spring只支持方法类型的连接点
 - Pointcut（切入点）：所谓切入点是指我们要对那些Joinpoint进行拦截的定义
 - Advice（通知/增强）：所谓通知是指拦截到Joinpoint之后所要的事情就是通知
     - **通知分为**前置通知，后置通知，异常通知，最终通知，环绕通知（切面要完成的功能） 
-- Introduction（引介）：引介Hi一种特殊的通知在不修改类代码的前提下
+- Introduction（引介）：引介是一种特殊的通知在不修改类代码的前提下
     - Introduction可以在运行期为类动态地添加一些方法或Field
 - Target（目标对象）：代理的目标对象
 - Weaving（织入）：是指吧增强应用到目标对象来创建新的代理对象的过程。
     - spring采用动态代理织入，而AspectJ采用编译期织入和类装载期织入
 - Proxy（代理）：一个类被AOP织入增强后，就产生一个结果代理类
 - Aspect（切面）：是切入点和通知（引介）的结合
-![image](image/AOP相关术语.png)
+![image-20210403224741595](https://gitee.com/JeanLv/study_image2/raw/master///image-20210403224741595.png)
 
 # AOP的底层实现
 ## JDK动态代理
@@ -205,12 +205,12 @@ pom.xml引入依赖
     - 匹配实现特定接口所有类方法
     ```
     execution(* com.xxx.dao.xxxDAO+.*(..))
-    ```  
+    ```
     - 匹配所有save开头的方法
     ```
     execution(* save*(..))
-    ``` 
-  
+    ```
+
 #### aspectJ入门案例
 spring-aspectJ.xml的配置
 ```xml
@@ -276,7 +276,7 @@ spring-aspectJ.xml的配置
    public void afterThrowing(Throwable e){
        System.out.println("异常抛出通知====" + e.getMessage());
    }
-    ```
+   ```
 - @After最终通知
     - 无论是否出现异常，最终通知总是会被执行的
     
@@ -288,7 +288,7 @@ spring-aspectJ.xml的配置
     ```
     @Pointcut(value = "execution(* com.spring.example.aop.aspectJ.anno.ProductDAO.save(..))")
     private void pointcutSave() {}
-  
+    
     @Pointcut(value = "execution(* com.spring.example.aop.aspectJ.anno.ProductDAO.update(..))")
     private void pointcutUpdate() {}
     ```

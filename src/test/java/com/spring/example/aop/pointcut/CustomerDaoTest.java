@@ -1,19 +1,19 @@
 package com.spring.example.aop.pointcut;
 
-import org.junit.Test;
-import org.junit.runner.RunWith;
+
+import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.extension.ExtendWith;
 import org.springframework.test.context.ContextConfiguration;
-import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
+import org.springframework.test.context.junit.jupiter.SpringExtension;
 
 import javax.annotation.Resource;
 
-import static org.junit.Assert.*;
 
 /**
  * @author jinglv
  * @date 2020-05-03 14:15
  */
-@RunWith(SpringJUnit4ClassRunner.class)
+@ExtendWith(SpringExtension.class)
 @ContextConfiguration("classpath:spring-pointcut.xml")
 public class CustomerDaoTest {
 
@@ -22,7 +22,7 @@ public class CustomerDaoTest {
     private CustomerDao customerDao;
 
     @Test
-    public void test(){
+    public void test() {
         customerDao.find();
         customerDao.save();
         customerDao.update();

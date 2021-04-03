@@ -1,34 +1,39 @@
 package com.spring.example.base;
 
-import org.junit.After;
-import org.junit.Before;
+
+import org.junit.jupiter.api.AfterAll;
+import org.junit.jupiter.api.BeforeAll;
+import org.junit.jupiter.api.extension.ExtendWith;
 import org.springframework.beans.BeansException;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
+import org.springframework.test.context.junit.jupiter.SpringExtension;
 import org.springframework.util.StringUtils;
 
 /**
  * 完成对Spring配置文件的加载，销毁
  * 所有的单元测试类都要继承自UnitTestBase，通过它的getBean方法获取想要得到的对象
  */
+@ExtendWith(SpringExtension.class)
 public class UnitTestBase {
 
-    private ClassPathXmlApplicationContext context;
+    private static ClassPathXmlApplicationContext context;
 
-    private String springXmlpath;
+    private static String springXpath;
 
-    public UnitTestBase() {}
-
-    public UnitTestBase(String springXmlpath) {
-        this.springXmlpath = springXmlpath;
+    public UnitTestBase() {
     }
 
-    @Before
-    public void before() {
-        if (StringUtils.isEmpty(springXmlpath)) {
-            springXmlpath = "classpath*:spring-*.xml";
+    public UnitTestBase(String springXpath) {
+        UnitTestBase.springXpath = springXpath;
+    }
+
+    @BeforeAll
+    public static void before() {
+        if (StringUtils.isEmpty(springXpath)) {
+            springXpath = "classpath*:spring-*.xml";
         }
         try {
-            context = new ClassPathXmlApplicationContext(springXmlpath.split("[,\\s]+"));
+            context = new ClassPathXmlApplicationContext(springXpath.split("[,\\s]+"));
             context.start();
         } catch (BeansException e) {
             e.printStackTrace();
@@ -38,15 +43,15 @@ public class UnitTestBase {
     /**
      * Bean的关闭销毁
      */
-    @After
-    public void after() {
+    @AfterAll
+    public static void after() {
         context.close();
     }
 
 
     protected <T extends Object> T getBean(String beanId) {
         try {
-            return (T)context.getBean(beanId);
+            return (T) context.getBean(beanId);
         } catch (BeansException e) {
             e.printStackTrace();
             return null;

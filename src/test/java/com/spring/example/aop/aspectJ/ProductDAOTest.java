@@ -1,17 +1,17 @@
 package com.spring.example.aop.aspectJ;
 
 import com.spring.example.aop.aspectJ.anno.ProductDAO;
-import org.junit.Test;
-import org.junit.runner.RunWith;
+import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.extension.ExtendWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.test.context.ContextConfiguration;
-import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
+import org.springframework.test.context.junit.jupiter.SpringExtension;
 
 /**
  * @author jinglv
  * @date 2020/10/06
  */
-@RunWith(SpringJUnit4ClassRunner.class)
+@ExtendWith(SpringExtension.class)
 @ContextConfiguration("classpath:spring-aspectJ.xml")
 public class ProductDAOTest {
 
@@ -19,7 +19,7 @@ public class ProductDAOTest {
     private ProductDAO productDAO;
 
     @Test
-    public void test(){
+    public void test() {
         productDAO.save();
         productDAO.update();
         productDAO.delete();

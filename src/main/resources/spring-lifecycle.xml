@@ -6,11 +6,11 @@
 
     <!--Bean的生命周期 -->
     <!--<bean id="man" class="com.spring.example.bean.lifecycle.Man" init-method="setUp" destroy-method="tearDown">-->
-        <!--<property name="name" value="Life" />-->
+    <!--<property name="name" value="Life" />-->
     <!--</bean>-->
 
-    <bean class="com.spring.example.bean.lifecycle.MyBeanPostProcessor" />
+    <bean class="com.spring.example.bean.lifecycle.MyBeanPostProcessor"/>
 
-    <bean id="userDao" class="com.spring.example.bean.lifecycle.UserDaoImpl"/>
+    <bean id="userDao" class="com.spring.example.bean.lifecycle.dao.UserDaoImpl"/>
 
 </beans>

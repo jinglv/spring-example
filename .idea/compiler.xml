@@ -7,7 +7,12 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="spring-example" />
+        <module name="spring-bean-xml" />
+        <module name="spring-aop" />
+        <module name="spring-aop-aspectj" />
+        <module name="spring-ioc" />
+        <module name="spring-bean-factory" />
+        <module name="spring-bean-annotation" />
       </profile>
     </annotationProcessing>
   </component>

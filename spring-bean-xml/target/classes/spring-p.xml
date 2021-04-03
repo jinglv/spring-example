@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:p="http://www.springframework.org/schema/p"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!--Bean的p名称空间的属性注入-->
+    <bean id="person-p" class="com.example.bean.demo.di.Person" p:name="芙蓉姐姐" p:age="48" p:cat-ref="cat-p">
+    </bean>
+
+    <bean id="cat-p" class="com.example.bean.demo.di.Cat" p:name="Mimi"/>
+
+</beans>

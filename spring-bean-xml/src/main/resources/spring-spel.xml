@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!--Bean的SpEL的属性注入-->
+    <bean id="product" class="com.example.bean.demo.spel.Product">
+        <property name="name" value="#{'男装'}"/>
+        <property name="price" value="#{productInfo.calculatePrice()}"/>
+        <property name="category" value="#{category}"/>
+    </bean>
+
+    <bean id="category" class="com.example.bean.demo.spel.Category">
+        <property name="name" value="#{'服装'}"/>
+    </bean>
+
+    <bean id="productInfo" class="com.example.bean.demo.spel.ProductInfo"/>
+
+
+</beans>

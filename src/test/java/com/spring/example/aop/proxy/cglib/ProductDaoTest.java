@@ -1,8 +1,6 @@
 package com.spring.example.aop.proxy.cglib;
 
-import org.junit.Test;
-
-import static org.junit.Assert.*;
+import org.junit.jupiter.api.Test;
 
 /**
  * @author jingLv
@@ -11,7 +9,7 @@ import static org.junit.Assert.*;
 public class ProductDaoTest {
 
     @Test
-    public void test(){
+    public void test() {
         ProductDao productDao = new ProductDao();
 
         ProductDao proxy = (ProductDao) new MyCglibProxy(productDao).createProxy();
