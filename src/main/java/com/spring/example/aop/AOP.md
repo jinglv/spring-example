@@ -127,7 +127,7 @@ DefaultAdvisorAutoProxyCreator
 ### 环境准备
 
 pom.xml引入依赖
-```
+```xml
 <!--aop引入的包-->
 <dependency>
     <groupId>aopalliance</groupId>

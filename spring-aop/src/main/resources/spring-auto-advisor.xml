@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!--配置目标类-->
+    <bean id="studentDao" class="com.example.aop.auto.advisor.dao.StudentDaoImpl"/>
+    <bean id="customerDao" class="com.example.aop.auto.advisor.dao.CustomerDao"/>
+
+    <!--配置增强(通知)-->
+    <bean id="myBeforeAdvice" class="com.example.aop.auto.advisor.MyBeforeAdvice"/>
+    <bean id="myAroundAdvice" class="com.example.aop.auto.advisor.MyAroundAdvice"/>
+
+    <!--配置切面-->
+    <bean id="myAdvisor" class="org.springframework.aop.support.RegexpMethodPointcutAdvisor">
+        <!--配置表达式-->
+        <property name="pattern" value="com\.example\.aop\.auto\.advisor\.dao\.CustomerDao\.save"/>
+        <!--配置切面-->
+        <property name="advice" ref="myAroundAdvice"/>
+    </bean>
+
+    <!--配置基于切面信息的自动代理-->
+    <bean class="org.springframework.aop.framework.autoproxy.DefaultAdvisorAutoProxyCreator">
+    </bean>
+</beans>
