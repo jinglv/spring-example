@@ -4,58 +4,35 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7d379e87-6202-4313-8fec-ccb6cb31659b" name="Default" comment="feat:Spring工程模块新增和调整">
-      <change afterPath="$PROJECT_DIR$/spring-aop/src/main/java/com/example/aop/advisor/MyBeforeAdvice.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-aop/src/main/java/com/example/aop/advisor/dao/StudentDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-aop/src/main/java/com/example/aop/advisor/dao/StudentDaoImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-aop/src/main/java/com/example/aop/auto/advisor/dao/StudentDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-aop/src/main/java/com/example/aop/pointcut/MyAroundAdvice.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-aop/src/main/java/com/example/aop/pointcut/dao/CustomerDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-aop/src/main/java/com/example/aop/proxy/cglib/MyCglibProxy.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-aop/src/main/java/com/example/aop/proxy/cglib/dao/ProductDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-aop/src/main/resources/spring-advisor.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-aop/src/main/resources/spring-auto-advisor.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-aop/src/main/resources/spring-auto-bean.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-aop/src/main/resources/spring-pointcut.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-aop/src/test/java/com/example/aop/auto/advisor/Test.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-aop/src/test/java/com/example/aop/auto/bean/Test.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-aop/src/test/java/com/example/aop/pointcut/MyAroundAdviceTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-aop/src/test/java/com/example/aop/proxy/cglib/MyCglibProxyTest.java" afterDir="false" />
+    <list default="true" id="7d379e87-6202-4313-8fec-ccb6cb31659b" name="Default" comment="feat:Spring传动AOP">
+      <change afterPath="$PROJECT_DIR$/spring-aop-aspectj/src/main/java/com/example/aspectJ/anno/ProductAspectAnno.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-aop-aspectj/src/main/java/com/example/aspectJ/xml/CustomerAspectXml.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-aop-aspectj/src/test/java/com/example/aspectJ/anno/ProductAspectAnnoTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-aop-aspectj/src/test/java/com/example/aspectJ/xml/CustomerAspectXmlTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/image/spring架构.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/image/spring模块.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/spring/example/aop/AOP.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/spring/example/aop/AOP.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/spring/example/aop/advisor/MyBeforeAdvice.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-aop/src/main/java/com/example/aop/auto/advisor/MyBeforeAdvice.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/spring/example/aop/advisor/StudentDao.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/spring/example/aop/advisor/StudentDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-aop/src/main/java/com/example/aop/auto/advisor/dao/StudentDaoImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/spring/example/aop/autoadvisor/CustomerDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-aop/src/main/java/com/example/aop/auto/advisor/dao/CustomerDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/spring/example/aop/autoadvisor/MyAroundAdvice.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/spring/example/aop/autoadvisor/MyBeforeAdvice.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/spring/example/aop/autoadvisor/StudentDao.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/spring/example/aop/autoadvisor/StudentDaoImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/spring/example/aop/autobean/CustomerDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-aop/src/main/java/com/example/aop/auto/bean/dao/CustomerDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/spring/example/aop/autobean/MyAroundAdvice.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-aop/src/main/java/com/example/aop/auto/bean/MyAroundAdvice.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/spring/example/aop/autobean/MyBeforeAdvice.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-aop/src/main/java/com/example/aop/auto/bean/MyBeforeAdvice.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/spring/example/aop/autobean/StudentDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-aop/src/main/java/com/example/aop/auto/bean/dao/StudentDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/spring/example/aop/autobean/StudentDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-aop/src/main/java/com/example/aop/auto/bean/dao/StudentDaoImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/spring/example/aop/image/AOP相关术语.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/spring/example/aop/image/什么是AOP.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/spring/example/aop/pointcut/CustomerDao.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/spring/example/aop/pointcut/MyAroundAdvice.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-aop/src/main/java/com/example/aop/auto/advisor/MyAroundAdvice.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/spring/example/aop/proxy/cglib/MyCglibProxy.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/spring/example/aop/proxy/cglib/ProductDao.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/spring/example/aop/advisor/StudentDaoImplTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-aop/src/test/java/com/example/aop/advisor/Test.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/spring/example/aop/autoadvisor/CustomerDaoTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/spring/example/aop/autobean/StudentDaoImplTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/spring/example/aop/pointcut/CustomerDaoTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/spring/example/aop/proxy/cglib/ProductDaoTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/spring/example/aop/advisor/MyBeforeAdvice.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/spring/example/aop/advisor/StudentDao.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/spring/example/aop/advisor/StudentDaoImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/spring/example/aop/proxy/cglib/MyCglibProxy.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/spring/example/aop/proxy/cglib/ProductDao.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/spring/example/aop/advisor/StudentDaoImplTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/spring/example/aop/proxy/cglib/ProductDaoTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/spring/example/aop/AOP.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/spring/example/aop/aspectJ/anno/ProductAspectAnno.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/spring/example/aop/aspectJ/anno/ProductDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-aop-aspectj/src/main/java/com/example/aspectJ/anno/dao/ProductDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/spring/example/aop/aspectJ/xml/CustomerAspectXml.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/spring/example/aop/aspectJ/xml/CustomerDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-aop-aspectj/src/main/java/com/example/aspectJ/xml/dao/CustomerDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/spring/example/aop/aspectJ/xml/CustomerDAOImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-aop-aspectj/src/main/java/com/example/aspectJ/xml/dao/CustomerDAOImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/spring/example/bean/Bean.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/spring-advisor.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/spring-annotation.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/spring-aspectJ-xml.xml" beforeDir="false" afterPath="$PROJECT_DIR$/spring-aop-aspectj/src/main/resources/spring-aspectJ-xml.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/spring-aspectJ.xml" beforeDir="false" afterPath="$PROJECT_DIR$/spring-aop-aspectj/src/main/resources/spring-aspectJ.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/spring-auto-advisor.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/spring-auto-bean.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/spring-bean-injection.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/spring-bean.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/spring-injection.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/spring-ioc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/spring-lifecycle.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/spring-pointcut.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/spring-scope.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/spring/example/aop/aspectJ/ProductDAOTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/spring/example/aop/aspectJ/xml/CustomerDAOTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/spring/example/base/UnitTestBase.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -112,7 +89,7 @@
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
     <property name="jdk.selected.JAVA_MODULE" value="1.8" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/spring-aop/src/main/resources" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/spring-aop-aspectj/src/main/resources" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -123,11 +100,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.example.aspectJ.xml" />
+      <recent name="com.example.aspectJ.anno" />
+      <recent name="com.spring.example.aop.aspectJ.anno" />
       <recent name="com.example.aop.auto.advisor" />
       <recent name="com.example.aop.auto.bean" />
-      <recent name="com.example.aop.pointcut" />
-      <recent name="com.example.aop.advisor" />
-      <recent name="com.example.aop.proxy.cglib" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/main/java/com/spring/example/bean/image" />
@@ -139,18 +116,19 @@
       <recent name="" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.example.aspectJ.anno.dao" />
       <recent name="com.example.bean.demo.lifecycle" />
       <recent name="com.spring.example.bean.lifecycle" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/spring-aop-aspectj/src/main/resources" />
+      <recent name="$PROJECT_DIR$/spring-aop-aspectj/src/main/java/com/example/aspectJ/xml/dao" />
       <recent name="$PROJECT_DIR$/spring-aop/src/main/resources" />
       <recent name="$PROJECT_DIR$/spring-aop/src/main/java/com/example/aop/auto/advisor" />
       <recent name="$PROJECT_DIR$/spring-aop/src/main/java/com/example/aop/auto/bean/dao" />
-      <recent name="$PROJECT_DIR$/spring-aop/src/main/java/com/example/aop/auto/bean" />
-      <recent name="$PROJECT_DIR$/spring-bean-annotation/src/main/resources" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.Test (1)">
+  <component name="RunManager" selected="JUnit.CustomerAspectXmlTest">
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <method v="2">
@@ -168,34 +146,50 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MyAroundAdviceTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="spring-aop" />
+    <configuration name="CustomerAspectXmlTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="spring-aop-aspectj" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.example.aop.pointcut.*" />
+          <option name="PATTERN" value="com.example.aspectJ.xml.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.example.aop.pointcut" />
-      <option name="MAIN_CLASS_NAME" value="com.example.aop.pointcut.MyAroundAdviceTest" />
-      <option name="METHOD_NAME" value="test" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="PACKAGE_NAME" value="com.example.aspectJ.xml" />
+      <option name="MAIN_CLASS_NAME" value="com.example.aspectJ.xml.CustomerAspectXmlTest" />
+      <option name="TEST_OBJECT" value="class" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MyCglibProxyTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="spring-aop" />
+    <configuration name="ProductAspectAnnoTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="spring-aop-aspectj" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.example.aop.proxy.cglib.*" />
+          <option name="PATTERN" value="com.example.aspectJ.anno.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.example.aop.proxy.cglib" />
-      <option name="MAIN_CLASS_NAME" value="com.example.aop.proxy.cglib.MyCglibProxyTest" />
+      <option name="PACKAGE_NAME" value="com.example.aspectJ.anno" />
+      <option name="MAIN_CLASS_NAME" value="com.example.aspectJ.anno.ProductAspectAnnoTest" />
       <option name="TEST_OBJECT" value="class" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ProductAspectAnnoTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="spring-example" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.spring.example.aop.aspectJ.anno.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.spring.example.aop.aspectJ.anno" />
+      <option name="MAIN_CLASS_NAME" value="com.spring.example.aop.aspectJ.anno.ProductAspectAnnoTest" />
+      <option name="METHOD_NAME" value="test" />
+      <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -233,23 +227,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Test.before" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="spring-aop" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.example.aop.advisor.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.example.aop.advisor" />
-      <option name="MAIN_CLASS_NAME" value="com.example.aop.advisor.Test" />
-      <option name="METHOD_NAME" value="before" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
       <option name="TEST_OBJECT" value="class" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
@@ -267,19 +244,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="JUnit.MyCglibProxyTest" />
-      <item itemvalue="JUnit.MyBeforeAdviceTest.before" />
-      <item itemvalue="JUnit.MyAroundAdviceTest.test" />
       <item itemvalue="JUnit.Test" />
       <item itemvalue="JUnit.Test (1)" />
+      <item itemvalue="JUnit.ProductAspectAnnoTest.test" />
+      <item itemvalue="JUnit.ProductAspectAnnoTest" />
+      <item itemvalue="JUnit.CustomerAspectXmlTest" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.CustomerAspectXmlTest" />
+        <item itemvalue="JUnit.ProductAspectAnnoTest" />
+        <item itemvalue="JUnit.ProductAspectAnnoTest.test" />
         <item itemvalue="JUnit.Test (1)" />
         <item itemvalue="JUnit.Test" />
-        <item itemvalue="JUnit.MyAroundAdviceTest.test" />
-        <item itemvalue="JUnit.MyBeforeAdviceTest.before" />
-        <item itemvalue="JUnit.MyCglibProxyTest" />
       </list>
     </recent_temporary>
   </component>
@@ -330,7 +307,7 @@
       <workItem from="1610892860552" duration="5040000" />
       <workItem from="1611493045913" duration="5678000" />
       <workItem from="1616118450551" duration="609000" />
-      <workItem from="1617240692552" duration="12377000" />
+      <workItem from="1617240692552" duration="17570000" />
     </task>
     <task id="LOCAL-00001" summary="[update]spring版本">
       <created>1587653504977</created>
@@ -381,7 +358,14 @@
       <option name="project" value="LOCAL" />
       <updated>1617463296539</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="feat:Spring传动AOP">
+      <created>1617535434349</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1617535434349</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -395,7 +379,8 @@
     <MESSAGE value="[update]Spring版本" />
     <MESSAGE value="feat:AspectJ切面学习笔记" />
     <MESSAGE value="feat:Spring工程模块新增和调整" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat:Spring工程模块新增和调整" />
+    <MESSAGE value="feat:Spring传动AOP" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat:Spring传动AOP" />
   </component>
   <component name="WindowStateProjectService">
     <state x="533" y="141" key="#com.intellij.ide.util.MemberChooser" timestamp="1617533042208">
@@ -409,36 +394,36 @@
       <screen x="0" y="25" width="1440" height="799" />
     </state>
     <state x="409" y="25" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.25.1440.799@0.25.1440.799" timestamp="1617534957986" />
-    <state x="75" y="25" key="CommitChangelistDialog2" timestamp="1617463295942">
+    <state x="75" y="25" key="CommitChangelistDialog2" timestamp="1617535434007">
       <screen x="0" y="25" width="1440" height="799" />
     </state>
-    <state x="75" y="25" key="CommitChangelistDialog2/0.25.1440.799@0.25.1440.799" timestamp="1617463295942" />
-    <state width="1396" height="344" key="GridCell.Tab.0.bottom" timestamp="1617535302326">
+    <state x="75" y="25" key="CommitChangelistDialog2/0.25.1440.799@0.25.1440.799" timestamp="1617535434007" />
+    <state width="1396" height="494" key="GridCell.Tab.0.bottom" timestamp="1617606611773">
       <screen x="0" y="25" width="1440" height="799" />
     </state>
-    <state width="1396" height="344" key="GridCell.Tab.0.bottom/0.25.1440.799@0.25.1440.799" timestamp="1617535302326" />
-    <state width="1396" height="277" key="GridCell.Tab.0.bottom/0.25.1440.801@0.25.1440.801" timestamp="1610498983967" />
+    <state width="1396" height="494" key="GridCell.Tab.0.bottom/0.25.1440.799@0.25.1440.799" timestamp="1617606611773" />
+    <state width="1396" height="231" key="GridCell.Tab.0.bottom/0.25.1440.801@0.25.1440.801" timestamp="1617603303777" />
     <state width="1396" height="213" key="GridCell.Tab.0.bottom/0.25.1440.804@0.25.1440.804" timestamp="1612082955965" />
     <state width="1396" height="277" key="GridCell.Tab.0.bottom/0.25.1440.807@0.25.1440.807" timestamp="1610066856460" />
-    <state width="1396" height="344" key="GridCell.Tab.0.center" timestamp="1617535302326">
+    <state width="1396" height="494" key="GridCell.Tab.0.center" timestamp="1617606611773">
       <screen x="0" y="25" width="1440" height="799" />
     </state>
-    <state width="1396" height="344" key="GridCell.Tab.0.center/0.25.1440.799@0.25.1440.799" timestamp="1617535302326" />
-    <state width="1396" height="277" key="GridCell.Tab.0.center/0.25.1440.801@0.25.1440.801" timestamp="1610498983966" />
+    <state width="1396" height="494" key="GridCell.Tab.0.center/0.25.1440.799@0.25.1440.799" timestamp="1617606611773" />
+    <state width="1396" height="231" key="GridCell.Tab.0.center/0.25.1440.801@0.25.1440.801" timestamp="1617603303776" />
     <state width="1396" height="213" key="GridCell.Tab.0.center/0.25.1440.804@0.25.1440.804" timestamp="1612082955964" />
     <state width="1396" height="277" key="GridCell.Tab.0.center/0.25.1440.807@0.25.1440.807" timestamp="1610066856459" />
-    <state width="1396" height="344" key="GridCell.Tab.0.left" timestamp="1617535302325">
+    <state width="1396" height="494" key="GridCell.Tab.0.left" timestamp="1617606611772">
       <screen x="0" y="25" width="1440" height="799" />
     </state>
-    <state width="1396" height="344" key="GridCell.Tab.0.left/0.25.1440.799@0.25.1440.799" timestamp="1617535302325" />
-    <state width="1396" height="277" key="GridCell.Tab.0.left/0.25.1440.801@0.25.1440.801" timestamp="1610498983966" />
+    <state width="1396" height="494" key="GridCell.Tab.0.left/0.25.1440.799@0.25.1440.799" timestamp="1617606611772" />
+    <state width="1396" height="231" key="GridCell.Tab.0.left/0.25.1440.801@0.25.1440.801" timestamp="1617603303776" />
     <state width="1396" height="213" key="GridCell.Tab.0.left/0.25.1440.804@0.25.1440.804" timestamp="1612082955964" />
     <state width="1396" height="277" key="GridCell.Tab.0.left/0.25.1440.807@0.25.1440.807" timestamp="1610066856459" />
-    <state width="1396" height="344" key="GridCell.Tab.0.right" timestamp="1617535302326">
+    <state width="1396" height="494" key="GridCell.Tab.0.right" timestamp="1617606611773">
       <screen x="0" y="25" width="1440" height="799" />
     </state>
-    <state width="1396" height="344" key="GridCell.Tab.0.right/0.25.1440.799@0.25.1440.799" timestamp="1617535302326" />
-    <state width="1396" height="277" key="GridCell.Tab.0.right/0.25.1440.801@0.25.1440.801" timestamp="1610498983967" />
+    <state width="1396" height="494" key="GridCell.Tab.0.right/0.25.1440.799@0.25.1440.799" timestamp="1617606611773" />
+    <state width="1396" height="231" key="GridCell.Tab.0.right/0.25.1440.801@0.25.1440.801" timestamp="1617603303777" />
     <state width="1396" height="213" key="GridCell.Tab.0.right/0.25.1440.804@0.25.1440.804" timestamp="1612082955965" />
     <state width="1396" height="277" key="GridCell.Tab.0.right/0.25.1440.807@0.25.1440.807" timestamp="1610066856459" />
     <state width="1396" height="242" key="GridCell.Tab.1.bottom" timestamp="1617498119951">
@@ -461,15 +446,15 @@
       <screen x="0" y="25" width="1440" height="804" />
     </state>
     <state x="221" y="25" key="SettingsEditor/0.25.1440.804@0.25.1440.804" timestamp="1610459880188" />
-    <state x="320" y="160" key="Vcs.Push.Dialog.v2" timestamp="1617463298474">
+    <state x="320" y="160" key="Vcs.Push.Dialog.v2" timestamp="1617535436531">
       <screen x="0" y="25" width="1440" height="799" />
     </state>
-    <state x="320" y="160" key="Vcs.Push.Dialog.v2/0.25.1440.799@0.25.1440.799" timestamp="1617463298474" />
-    <state x="462" y="208" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1617534935516">
+    <state x="320" y="160" key="Vcs.Push.Dialog.v2/0.25.1440.799@0.25.1440.799" timestamp="1617535436531" />
+    <state x="462" y="208" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1617605433251">
       <screen x="0" y="25" width="1440" height="799" />
     </state>
-    <state x="462" y="208" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.25.1440.799@0.25.1440.799" timestamp="1617534935516" />
-    <state x="462" y="208" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.25.1440.801@0.25.1440.801" timestamp="1610463696704" />
+    <state x="462" y="208" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.25.1440.799@0.25.1440.799" timestamp="1617605433251" />
+    <state x="462" y="208" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.25.1440.801@0.25.1440.801" timestamp="1617602990266" />
     <state x="462" y="209" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.25.1440.804@0.25.1440.804" timestamp="1611846022285" />
     <state x="421" y="149" width="597" height="550" key="find.popup" timestamp="1617533122038">
       <screen x="0" y="25" width="1440" height="799" />
