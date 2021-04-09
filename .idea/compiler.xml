@@ -8,11 +8,12 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="spring-bean-xml" />
-        <module name="spring-aop" />
+        <module name="spring-jdbc-template" />
         <module name="spring-aop-aspectj" />
         <module name="spring-ioc" />
         <module name="spring-bean-factory" />
         <module name="spring-bean-annotation" />
+        <module name="spring-aop" />
       </profile>
     </annotationProcessing>
   </component>
